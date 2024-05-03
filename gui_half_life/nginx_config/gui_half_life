@@ -1,0 +1,45 @@
+server {
+ listen 80;
+ server_name elections.whosban.eu.org;
+   listen 443 ssl; # managed by Certbot
+
+    ssl_certificate /etc/letsencrypt/live/elections.whosban.eu.org/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/elections.whosban.eu.org/privkey.pem; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/elections.audits.eu.org/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/elections.audits.eu.org/privkey.pem; # managed by Certbot
+
+
+ssl_session_cache shared:le_nginx_SSL:10m;
+ssl_session_timeout 1440m;
+ssl_session_tickets off;
+
+ssl_protocols TLSv1.2 TLSv1.3;
+ssl_prefer_server_ciphers off;
+
+ssl_ciphers "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384";
+
+ # Redirect non-https traffic to https
+    if ($scheme != "https") {
+        return 301 https://$host$request_uri;
+    } # managed by Certbot
+
+location / {
+ # include proxy_params;
+ proxy_pass http://unix:/gui_half_life/gui_half_life.sock;
+  proxy_read_timeout 6000000s;
+  proxy_connect_timeout 6000000s;
+set_real_ip_from 172.0.0.0/8;
+#proxy_redirect off;
+#proxy_set_header REMOTE_ADDR $remote_addr;
+
+#proxy_set_header X-Real-IP $remote_addr;
+proxy_set_header X-Forwarded-For $remote_addr;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#set_real_ip_from 172.17.0.1;
+real_ip_header X-Forwarded-For;
+
+#proxy_set_header X-Forwarded-Proto $scheme;
+#proxy_set_header Host $http_host;
+#proxy_set_header X-NginX-Proxy true;
+ }
+}

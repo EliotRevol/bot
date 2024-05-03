@@ -1,0 +1,127 @@
+[
+  {
+    "channel": "Black Pigeon Speaks",
+    "id": "/user/TokyoAtomic",
+    "type": "AR"
+  },
+  {
+    "channel": "The Golden One",
+    "id": "/user/TheLatsbrah",
+    "type": "AR"
+  },
+  {
+    "channel": "NeatoBurrito Productions",
+    "id": "/channel/UCZtDKD0pFpPclXA7ZAti90w",
+    "type": "AR"
+  },
+  {
+    "channel": "Australian Realist ",
+    "id": "/user/AustralianRealist",
+    "type": "AR"
+  },
+  {
+    "channel": "Prince of Zimbabwe",
+    "id": "/c/PrinceofZimbabwe",
+    "type": "AR"
+  },
+  {
+    "channel": "Vox",
+    "id": "/user/voxdotcom",
+    "type": "media"
+  },
+  {
+    "channel": "GQ",
+    "id": "/c/GQ",
+    "type": "media"
+  },
+  {
+    "channel": "VICE News",
+    "id": "/c/VICENews",
+    "type": "media"
+  },
+  {
+    "channel": "WIRED",
+    "id": "/user/wired",
+    "type": "media"
+  },
+  {
+    "channel": "Vanity Fair",
+    "id": "/c/VanityFair",
+    "type": "media"
+  },
+  {
+    "channel": "PowerfulJRE",
+    "id": "/user/PowerfulJRE",
+    "type": "IDW"
+  },
+  {
+    "channel": "JRE Clips",
+    "id": "/c/JREClips",
+    "type": "IDW"
+  },
+  {
+    "channel": "PragerU",
+    "id": "/user/PragerUniversity",
+    "type": "IDW"
+  },
+  {
+    "channel": "The Daily Wire",
+    "id": "/c/TheDailyWire/",
+    "type": "IDW"
+  },
+  {
+    "channel": "The Rubin Report",
+    "id": "/user/RubinReport",
+    "type": "IDW"
+  },
+  {
+    "channel": "StevenCrowder",
+    "id": "/user/StevenCrowder",
+    "type": "AL"
+  },
+  {
+    "channel": "Rebel News",
+    "id": "/c/RebelMediaTV",
+    "type": "AL"
+  },
+  {
+    "channel": "Paul Joseph Watson",
+    "id": "/user/PrisonPlanetLive",
+    "type": "AL"
+  },
+  {
+    "channel": "Mark Dice",
+    "id": "/user/MarkDice",
+    "type": "AL"
+  },
+  {
+    "channel": "Sargon of Akkad",
+    "id": "/user/SargonofAkkad100",
+    "type": "AL"
+  },
+  {
+    "channel": "ChuChu TV Nursery Rhymes & Kids Songs",
+    "id": "/c/ChuChuTV",
+    "type": "kids"
+  },
+  {
+    "channel": "El Reino Infantil",
+    "id": "/c/elreinoinfantil",
+    "type": "kids"
+  },
+  {
+    "channel": "Little Baby Bum - Nursery Rhymes & Kids Songs",
+    "id": "/user/LittleBabyBum",
+    "type": "kids"
+  },
+  {
+    "channel": "Masha and The Bear",
+    "id": "/c/MashaBearEN",
+    "type": "kids"
+  },
+  {
+    "channel": "Ryan s World",
+    "id": "/c/RyanToysReview",
+    "type": "kids"
+  }
+]

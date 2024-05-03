@@ -1,0 +1,15 @@
+#run-walk {
+    width: 100%;
+}
+
+#heading-walk {
+    text-align: center;
+}
+
+input, button {
+    margin: 5px;
+}
+
+#progress-bar {
+    display: none;
+}

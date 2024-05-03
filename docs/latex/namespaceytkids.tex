@@ -1,0 +1,194 @@
+\hypertarget{namespaceytkids}{}\doxysection{ytkids Namespace Reference}
+\label{namespaceytkids}\index{ytkids@{ytkids}}
+
+
+Proxy Youtube Kids.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceytkids_a5a441ed88611ba46808c8aa4ca61fd2a}{resolv}} (id)
+\begin{DoxyCompactList}\small\item\em Résout la catégorie d\textquotesingle{}un vidéo a partir d\textquotesingle{}un id. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceytkids_ac10c642fe6be8f847c4a34f489323f35}{call\+Api}} (id, cat)
+\begin{DoxyCompactList}\small\item\em Appel a l\textquotesingle{}api youtube kids pour savoir si la vidéo correspond a la catégorie demandée. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceytkids_a3103c43d7e91174e5e7f915e682a2d09}{csv\+Reso}} (df)
+\begin{DoxyCompactList}\small\item\em Applique la résolution sur un dataframe. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceytkids_a0f6b6c48d6ea2c6f25a2f5e361e23c76}{read\+Dataset}} (filename)
+\begin{DoxyCompactList}\small\item\em Lis un fichier CSV et le transforme en Data\+Frame. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceytkids_a2c844fcb49836890b72e942e43bc8dc5}{save\+Dataset}} (df, filename)
+\begin{DoxyCompactList}\small\item\em Sauvegarde le dataset dans un fichier CSV. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceytkids_a6d8da52c22c3ca468d14d48eee84f39f}{populate\+\_\+ytkids}} (file)
+\begin{DoxyCompactList}\small\item\em Remplis le champs ytkids d\textquotesingle{}un fichier CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \mbox{\hyperlink{namespaceytkids_afc346f681b358cef9fc88144c9e72a11}{cookies}}
+\item 
+dictionary \mbox{\hyperlink{namespaceytkids_a6dcfd8d76e4a84eb5b08c62ad6dfcefd}{headers}}
+\item 
+tuple \mbox{\hyperlink{namespaceytkids_a864e63ee5d3981aef75b56286e201848}{params}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proxy Youtube Kids. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceytkids_ac10c642fe6be8f847c4a34f489323f35}\label{namespaceytkids_ac10c642fe6be8f847c4a34f489323f35}} 
+\index{ytkids@{ytkids}!callApi@{callApi}}
+\index{callApi@{callApi}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{callApi()}{callApi()}}
+{\footnotesize\ttfamily def ytkids.\+call\+Api (\begin{DoxyParamCaption}\item[{}]{id,  }\item[{}]{cat }\end{DoxyParamCaption})}
+
+
+
+Appel a l\textquotesingle{}api youtube kids pour savoir si la vidéo correspond a la catégorie demandée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Vidéo id \\
+\hline
+{\em cat} & categorie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+OK ou empty 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceytkids_a3103c43d7e91174e5e7f915e682a2d09}\label{namespaceytkids_a3103c43d7e91174e5e7f915e682a2d09}} 
+\index{ytkids@{ytkids}!csvReso@{csvReso}}
+\index{csvReso@{csvReso}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{csvReso()}{csvReso()}}
+{\footnotesize\ttfamily def ytkids.\+csv\+Reso (\begin{DoxyParamCaption}\item[{}]{df }\end{DoxyParamCaption})}
+
+
+
+Applique la résolution sur un dataframe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em df} & dataframe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dataframe résolut 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceytkids_a6d8da52c22c3ca468d14d48eee84f39f}\label{namespaceytkids_a6d8da52c22c3ca468d14d48eee84f39f}} 
+\index{ytkids@{ytkids}!populate\_ytkids@{populate\_ytkids}}
+\index{populate\_ytkids@{populate\_ytkids}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{populate\_ytkids()}{populate\_ytkids()}}
+{\footnotesize\ttfamily def ytkids.\+populate\+\_\+ytkids (\begin{DoxyParamCaption}\item[{}]{file }\end{DoxyParamCaption})}
+
+
+
+Remplis le champs ytkids d\textquotesingle{}un fichier CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & fichier CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vidéo json 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceytkids_a0f6b6c48d6ea2c6f25a2f5e361e23c76}\label{namespaceytkids_a0f6b6c48d6ea2c6f25a2f5e361e23c76}} 
+\index{ytkids@{ytkids}!readDataset@{readDataset}}
+\index{readDataset@{readDataset}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{readDataset()}{readDataset()}}
+{\footnotesize\ttfamily def ytkids.\+read\+Dataset (\begin{DoxyParamCaption}\item[{}]{filename }\end{DoxyParamCaption})}
+
+
+
+Lis un fichier CSV et le transforme en Data\+Frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Nom du fichier CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dataframe 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceytkids_a5a441ed88611ba46808c8aa4ca61fd2a}\label{namespaceytkids_a5a441ed88611ba46808c8aa4ca61fd2a}} 
+\index{ytkids@{ytkids}!resolv@{resolv}}
+\index{resolv@{resolv}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{resolv()}{resolv()}}
+{\footnotesize\ttfamily def ytkids.\+resolv (\begin{DoxyParamCaption}\item[{}]{id }\end{DoxyParamCaption})}
+
+
+
+Résout la catégorie d\textquotesingle{}un vidéo a partir d\textquotesingle{}un id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Vidéo id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ytkids catégorie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceytkids_a2c844fcb49836890b72e942e43bc8dc5}\label{namespaceytkids_a2c844fcb49836890b72e942e43bc8dc5}} 
+\index{ytkids@{ytkids}!saveDataset@{saveDataset}}
+\index{saveDataset@{saveDataset}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{saveDataset()}{saveDataset()}}
+{\footnotesize\ttfamily def ytkids.\+save\+Dataset (\begin{DoxyParamCaption}\item[{}]{df,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+
+
+Sauvegarde le dataset dans un fichier CSV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em df} & Dataset \\
+\hline
+{\em filename} & Nom du fichier CSV \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vidéo json 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceytkids_afc346f681b358cef9fc88144c9e72a11}\label{namespaceytkids_afc346f681b358cef9fc88144c9e72a11}} 
+\index{ytkids@{ytkids}!cookies@{cookies}}
+\index{cookies@{cookies}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{cookies}{cookies}}
+{\footnotesize\ttfamily dictionary ytkids.\+cookies}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'G\_ENABLED\_IDPS'}: \textcolor{stringliteral}{'google'},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'YSC'}: \textcolor{stringliteral}{'ECC4oOxFF-\/4'},}
+\DoxyCodeLine{4 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceytkids_a6dcfd8d76e4a84eb5b08c62ad6dfcefd}\label{namespaceytkids_a6dcfd8d76e4a84eb5b08c62ad6dfcefd}} 
+\index{ytkids@{ytkids}!headers@{headers}}
+\index{headers@{headers}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily dictionary ytkids.\+headers}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \{}
+\DoxyCodeLine{2     \textcolor{stringliteral}{'Content-\/Type'}: \textcolor{stringliteral}{'application/json'},}
+\DoxyCodeLine{3     \textcolor{stringliteral}{'X-\/Goog-\/Visitor-\/Id'}: \textcolor{stringliteral}{'CgtoWGIyMlgwOFcxYyiwt6WABg\%3D\%3D'},}
+\DoxyCodeLine{4     \textcolor{stringliteral}{'Origin'}: \textcolor{stringliteral}{'https://www.youtubekids.com'},}
+\DoxyCodeLine{5 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceytkids_a864e63ee5d3981aef75b56286e201848}\label{namespaceytkids_a864e63ee5d3981aef75b56286e201848}} 
+\index{ytkids@{ytkids}!params@{params}}
+\index{params@{params}!ytkids@{ytkids}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily tuple ytkids.\+params}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  (}
+\DoxyCodeLine{2     (\textcolor{stringliteral}{'key'}, \textcolor{stringliteral}{'AIzaSyBbZV\_fZ3an51sF-\/mvs5w37OqqbsTOzwtU'}),}
+\DoxyCodeLine{3 )}
+
+\end{DoxyCode}

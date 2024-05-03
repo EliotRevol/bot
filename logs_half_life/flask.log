@@ -1,0 +1,744 @@
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:23:46] "POST /generate_mainstream HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:25:43] "POST /generate_reference HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:37:43] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:37:43] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:39:11] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:07] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:14] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:40:15] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:08] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:08] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:08] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:08] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:08] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:14] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:41:14] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:49] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:49] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:49] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:49] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:49] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:42:55] "POST /channelSniff HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:48:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:48:37] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:48:37] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:48:37] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:48:37] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:48:37] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:08] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:08] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:08] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:08] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:08] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:49:54] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:22] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:22] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:22] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:22] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:22] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:23] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:23] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:23] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:23] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:23] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:27] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:51:28] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:52:54] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:53:41] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:54:47] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:55:52] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:56:15] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:40] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:40] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:40] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:40] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:40] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:41] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:41] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:41] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:41] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:57:41] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:24] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:24] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:24] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:24] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:24] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:25] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:25] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:25] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:25] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:25] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:26] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:26] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:26] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:26] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:26] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:28] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 12:58:28] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:28] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:29] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:29] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:29] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:29] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:29] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:34] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:00:34] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:15] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:15] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:15] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:15] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:15] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:02:16] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:11] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:11] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:03:52] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:20] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:04:28] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:03] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:33] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:33] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:33] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:33] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:33] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:34] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:34] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:34] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:34] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:34] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:57] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:05:57] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:06:44] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:39] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:39] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:39] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:39] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:39] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:41] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:51] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:51] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:51] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:51] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:51] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:07:57] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:09:52] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:09:52] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:31:03] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:52:59] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:27] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:28] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:28] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:28] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:28] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:31] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:31] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:42] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:53:42] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:54:01] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:54:16] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:30] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:30] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:30] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:30] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:30] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:34] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:34] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:40] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:55:40] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:27] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:27] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:27] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:27] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:27] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:27] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:30] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:30] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:52] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:56:52] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:11] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:12] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:14] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:14] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:20] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:20] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:24] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 13:57:24] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:10] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:10] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:10] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:10] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:10] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:11] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:11] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:11] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:11] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:11] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:13] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:00:13] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:37] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:37] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:37] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:37] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:37] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:40] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:01:40] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:39] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:39] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:39] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:39] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:39] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:44] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:44] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:59] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:59] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:59] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:59] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:04:59] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:00] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:02] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:02] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:34] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /channelSniff [POST]
+Traceback (most recent call last):
+  File "/home/ali/anaconda3/envs/bot-crawler/lib/python3.7/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ali/anaconda3/envs/bot-crawler/lib/python3.7/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ali/anaconda3/envs/bot-crawler/lib/python3.7/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ali/anaconda3/envs/bot-crawler/lib/python3.7/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ali/Development/bot-crawler/gui_half_life/app.py", line 77, in channelSniff
+    channel_name = fetch_channel_name(url)
+  File "/home/ali/Development/bot-crawler/gui_half_life/src/helper.py", line 24, in fetch_channel_name
+    json_raw = striphtml(response.css('script:contains(responseContext)').extract()[0])
+IndexError: list index out of range
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:05:36] "[35m[1mPOST /channelSniff HTTP/1.1[0m" 500 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:37] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:37] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:37] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:37] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:38] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:41] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:41] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:46] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 14:06:46] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:25] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:25] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:25] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:25] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:26] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:28] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:10:28] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:34] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:53] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:55] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:11:55] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:04] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:04] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:04] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:04] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:04] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:04] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:07] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:07] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:13:42] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:37] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:40] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:40] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:55] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:14:55] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:00] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:00] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:00] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:00] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:00] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:01] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:04] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:04] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:38] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:38] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:38] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:38] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:38] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:39] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:42] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:15:42] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:16:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:16:59] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:16:59] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:16:59] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:16:59] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:16:59] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:00] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:03] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:03] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:34] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:34] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:34] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:34] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:34] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:35] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:37] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:17:37] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:26] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:26] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:26] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:26] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:27] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:30] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:18:30] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "GET /static/css/style_walks.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "GET /static/js/bar_chart.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "GET /static/js/script_walks.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:03] "[33mGET /static/js/bootstrap.min.js.map HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:05] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:05] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:07] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:07] "POST /walk_iter HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:09] "POST /channelSniff HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 16:20:09] "POST /walk_iter HTTP/1.1" 200 -
+INFO:root:started hosting
+INFO:root:logging set successfully
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.146:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:18:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:18:29] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:18:29] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:18:29] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:18:29] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:18:29] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:31:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:31:54] "[36mGET /static/css/style_walks.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:31:54] "[36mGET /static/js/d3.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:31:54] "[36mGET /static/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:31:54] "[36mGET /static/js/bar_chart.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/Jun/2022 17:31:54] "[36mGET /static/js/script_walks.js HTTP/1.1[0m" 304 -

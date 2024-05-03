@@ -1,0 +1,20 @@
+{
+  "name": "puppeteer-headless",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^13.13.52",
+    "@types/puppeteer": "^2.0.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "@cliqz/adblocker-puppeteer": "^1.16.0",
+    "@types/argparse": "^2.0.5",
+    "@types/node-fetch": "^2.5.7",
+    "argparse": "^2.0.1",
+    "node-fetch": "^2.6.0",
+    "puppeteer": "^2.1.1",
+    "puppeteer-extra": "^3.1.16",
+    "puppeteer-extra-plugin-stealth": "^2.6.5"
+  }
+}

@@ -1,0 +1,340 @@
+<svg version="1.1" baseProfile="full" width="4006" height="1834" viewbox="0 0 4006 1834" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" style="font-weight:bold; font-size:12pt; font-family:'Calibri', Helvetica, sans-serif;;stroke-width:3;stroke-linejoin:round;stroke-linecap:round">
+<title >nomnoml</title>
+<desc >#.interface: fill=lightblue
+#.enumeration: fill=lightgreen
+[Crawler||+initBrowser(): Promise&lt;any&gt;;+initPage(): Promise&lt;any&gt;;+readCookies(): Promise&lt;{}&gt;;+writeCookies(): Promise&lt;void&gt;;+eventExecutor(): Promise&lt;void&gt;;+crawl(): Promise&lt;void&gt;]
+[Action|#max_depth: number;#max_selection: number;#cookies: string;#randomStep: boolean;#nbRandomStep: number;#step: number;#type: string;#current_depth: number;#current_selection: number;#refreshNB: number;+searchTerm: string;+searchSelection: number;#watchTime: number;#page: any;+video_id: string;#channel_id: string;#scrapper: Scrapper;+id: number;+getAll: boolean;#alea: number;+actionNB: number;+videoViewsNB: number|+lauchCmd(): Promise&lt;void&gt;;+executeFonction(): Promise&lt;void&gt;;+postConf(): Promise&lt;void&gt;;+search(): Promise&lt;any&gt;;+clickOn(): Promise&lt;void&gt;;+clickHome(): Promise&lt;void&gt;;+setRefreshNB(): void;+getFullHomepage(): Promise&lt;void&gt;;+scrollUntil(): Promise&lt;void&gt;]
+[Scrapper||+getFullHtml(): Promise&lt;any&gt;;+getElement(): Promise&lt;any&gt;;+getProposals(): Promise&lt;any&gt;;+getProposalAuthor(): Promise&lt;any&gt;;+getHomeProposals(): Promise&lt;any&gt;;+getChannelFilter(): Promise&lt;any&gt;;+getHomeChanels(): Promise&lt;any&gt;;+getHomeViews(): Promise&lt;any&gt;;+getHomeDate(): Promise&lt;any&gt;;+getHomeDuration(): Promise&lt;any&gt;;+getHomeTitles(): Promise&lt;any&gt;;+getHomeUrls(): Promise&lt;any&gt;;+getChannelTitle(): Promise&lt;any&gt;;+getTitle(): Promise&lt;any&gt;;+getAuthor(): Promise&lt;any&gt;;+fill(): Promise&lt;any&gt;]
+[Autoplay||+execute(): Promise&lt;number&gt;]
+[Job]&lt;:-[Autoplay]
+[ChannelSniffer||+execute(): Promise&lt;number&gt;]
+[Job]&lt;:-[ChannelSniffer]
+[Fetch||+execute(): Promise&lt;number&gt;]
+[Job]&lt;:-[Fetch]
+[FetchAutoplay||+execute(): Promise&lt;number&gt;]
+[Job]&lt;:-[FetchAutoplay]
+[Job|+action: Action;#page: any|+execute(): void]
+[WatchOne||+execute(): Promise&lt;number&gt;]
+[Job]&lt;:-[WatchOne]
+[Common|+static __URL__: string;+static __SEARCHINPUT__: string;+static __SEARCHBUTTON__: string;+static __AGREEBUTTON__: string;+static __AGREEBUTTON2__: string;+static __NOSIGNBUTTON__: string;+static __HOMEBUTTON__: string|]
+[Homepage|+static __PROPOSALS__: string;+static __ELEMENT__URL: string;+static __ELEMENT__TITLE: string;+static __ELEMENT__CHANNEL: string|]
+[VideoPage|+static __CATEGORY__: string;+static __VIEWS__: string;+static __REGIONALLOWED__: string;+static __UNLISTED__: string;+static __PAID__: string;+static __DESCRIPTION__: string;+static __ISFAMILYFRIENDLY__: string;+static __SUBSCRIBERS__: string;+static __DURATION__: string;+static __DATE__: string;+static __COMMENT__: string;+static __DISLIKE__: string;+static __LIKE__: string;+static __TAGS__: string;+static __AUTHOR__: string;+static __TITLE__: string;+static __AUTOPLAY__: string;+static __AUTOPLAY__TITLE: string;+static __AUTOPLAY__URL: string;+static __PROPOSALS__: string|]
+[SearchPage|+static __TITLE__: string;+static __CHANNELFILTER__: string;+static __CHANNELFILTERBUTTON__: string;+static __RESULTELEMENT1__: string;+static __RESULTELEMENT2__: string|]
+[ChannelPage|+static __VIDEOSBUTTON__: string|]
+[Video|-url: string;-title: string;-parent_id: string;-views: string;-depth: number;-author: string;-tags: string\[\];-category: string;-date: string;-duration: string;-subscribers: string;-isFamilyFriendly: string;-description: string;-paid: string;-unlisted: string;-regionAllowed: string\[\];-apiYoutube: string;-homePosition: number;-refreshNB: number;-ytkids: string;-bodyHtml: string;-like: string;-dislike: string;-comment: string;-type: string;-insertionDate: Date;-watchTime: number;-actionNB: number;-videoViewsNB: number|+setParentId(): void;+setType(): void;+setTitle(): void;+setViews(): void;+setAuthor(): void;+setTags(): void;+setCategory(): void;+setDate(): void;+setDuration(): void;+setSubscibers(): void;+setIsFamilyFriendly(): void;+setDescription(): void;+setPaid(): void;+setUnlisted(): void;+setRegionAllowed(): void;+setHomePosition(): void;+setRefreshNB(): void;+setYtkids(): void;+setBodyHtml(): void;+setLike(): void;+setDislike(): void;+setWatchTime(): void;+setComment(): void;+setActionNB(): void;+addVideoViews(): void;+getVideoViewsNB(): number;+getActionNB(): number;+getComment(): string;+getWatchTime(): number;+getDislike(): string;+getLike(): string;+getBodyHtml(): string;+getYtkids(): string;+getRefreshNB(): number;+getHomePosition(): number;+getRegionAllowed(): string\[\];+getUnlisted(): string;+getPaid(): string;+getDescription(): string;+getIsFamilyFriendly(): string;+getSubscribers(): string;+getDuration(): string;+getDate(): string;+getCategory(): string;+getTags(): string\[\];+getAuthor(): string;+getDepth(): number;+getParentId(): string;+getTitle(): string;+getViews(): string;+getUrl(): string]
+[VideoScrapper||+getChannelFilter(): Promise&lt;any&gt;;+getChannelTitle(): Promise&lt;string&gt;;+getHomeProposals(): Promise&lt;any&gt;;+getHomeChanels(): Promise&lt;string&gt;;+getHomeViews(): Promise&lt;string&gt;;+getHomeDate(): Promise&lt;string&gt;;+getHomeDuration(): Promise&lt;string&gt;;+getHomeTitles(): Promise&lt;string&gt;;+getHomeUrls(): Promise&lt;string&gt;;+getSearchTitle(): Promise&lt;string\[\]&gt;;+fill(): Promise&lt;void&gt;;+getProposals(): Promise&lt;any&gt;;+getProposalTitle(): Promise&lt;string&gt;;+getProposalAuthor(): Promise&lt;string&gt;;+getTitle(): Promise&lt;string&gt;;+getAuthor(): Promise&lt;string&gt;;+getTags(): Promise&lt;string\[\]&gt;;+getLike(): Promise&lt;string&gt;;+getDislike(): Promise&lt;string&gt;;+getComment(): Promise&lt;string&gt;;+getDate(): Promise&lt;string&gt;;+getDuration(): Promise&lt;string&gt;;+getSubscribers(): Promise&lt;string&gt;;+getIsFamilyFriendly(): Promise&lt;string&gt;;+getDescription(): Promise&lt;string&gt;;+getPaid(): Promise&lt;string&gt;;+getUnlisted(): Promise&lt;string&gt;;+getRegionAllowed(): Promise&lt;string\[\]&gt;;+getCategory(): Promise&lt;string&gt;;+getViews(): Promise&lt;string&gt;]
+[Scrapper]&lt;:-[VideoScrapper]
+[YoutubeAction||+postConf(): Promise&lt;void&gt;;+preCondition(): Promise&lt;void&gt;;+noSign(): Promise&lt;void&gt;;+scrollUntil(): Promise&lt;void&gt;;+scrollUntilId(): Promise&lt;void&gt;;+scrollToEnd(): Promise&lt;number&gt;;+scrollUntilChannelId(): Promise&lt;void&gt;;+clickHome(): Promise&lt;void&gt;;+clickOnChannelFilter(): Promise&lt;void&gt;;+clickOn(): Promise&lt;void&gt;;+getProposals(): Promise&lt;void&gt;;+searchChannel(): Promise&lt;any&gt;;+search(): Promise&lt;any&gt;;+getRandomArbitrary(): number;+getAlea(): number;+getFullHomepage(): Promise&lt;void&gt;;+getRandomInt(): number;+getRandomHomeElement(): Promise&lt;any&gt;;+getAutoplay(): Promise&lt;any&gt;;+fillAutoplaysearch(): Promise&lt;void&gt;;+isFullyLoad(): Promise&lt;void&gt;]
+[Action]&lt;:-[YoutubeAction]</desc>
+<path d="M1608.6 699 L1321.5 1296.5 L1321.5 1534 L1321.5 1534 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1607.6 713.3 L1602.8 711 L1598 708.7 L1608.6 699 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1634.5 699 L1634.5 1296.5 L1634.5 1534 L1634.5 1534 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1639.8 712.3 L1634.5 712.3 L1629.2 712.3 L1634.5 699 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1660.4 699 L1947.5 1296.5 L1947.5 1534 L1947.5 1534 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1671 708.7 L1666.2 711 L1661.4 713.3 L1660.4 699 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1686.4 699 L2260.5 1296.5 L2260.5 1534 L2260.5 1534 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1699.5 704.9 L1695.6 708.6 L1691.8 712.3 L1686.4 699 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M1712.3 699 L2573.5 1296.5 L2573.5 1534 L2573.5 1534 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1726.3 702.2 L1723.3 706.6 L1720.2 711 L1712.3 699 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M951.5 792.5 L951.5 1296.5 L951.5 1316.5 L951.5 1316.5 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M956.8 805.8 L951.5 805.8 L946.2 805.8 L951.5 792.5 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<path d="M529.5 909 L529.5 1296.5 L529.5 1384 L529.5 1384 " style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M534.8 922.3 L529.5 922.3 L524.2 922.3 L529.5 909 Z" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></path>
+<rect x="13.5" y="572.5" height="145" width="311" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id=".Crawler" xlink:href=""><text x="169" y="594" style="fill: #33322E;text-anchor: middle;">Crawler</text></a>
+<path d="M13.5 603.5 L324.5 603.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M13.5 611.5 L324.5 611.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="21.5" y="633" style="fill: #33322E;font-weight:normal;">+initBrowser(): Promise&lt;any&gt;</text>
+<text x="21.5" y="648" style="fill: #33322E;font-weight:normal;">+initPage(): Promise&lt;any&gt;</text>
+<text x="21.5" y="663" style="fill: #33322E;font-weight:normal;">+readCookies(): Promise&lt;{}&gt;</text>
+<text x="21.5" y="678" style="fill: #33322E;font-weight:normal;">+writeCookies(): Promise&lt;void&gt;</text>
+<text x="21.5" y="693" style="fill: #33322E;font-weight:normal;">+eventExecutor(): Promise&lt;void&gt;</text>
+<text x="21.5" y="708" style="fill: #33322E;font-weight:normal;">+crawl(): Promise&lt;void&gt;</text>
+<rect x="364.5" y="381.5" height="528" width="330" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/abstract/action.ts.Action" xlink:href="src/abstract/action.ts"><text x="529.5" y="403" style="fill: #33322E;text-anchor: middle;">Action</text></a>
+<path d="M364.5 412.5 L694.5 412.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="372.5" y="434" style="fill: #33322E;font-weight:normal;">#max_depth: number</text>
+<text x="372.5" y="449" style="fill: #33322E;font-weight:normal;">#max_selection: number</text>
+<text x="372.5" y="464" style="fill: #33322E;font-weight:normal;">#cookies: string</text>
+<text x="372.5" y="479" style="fill: #33322E;font-weight:normal;">#randomStep: boolean</text>
+<text x="372.5" y="494" style="fill: #33322E;font-weight:normal;">#nbRandomStep: number</text>
+<text x="372.5" y="509" style="fill: #33322E;font-weight:normal;">#step: number</text>
+<text x="372.5" y="524" style="fill: #33322E;font-weight:normal;">#type: string</text>
+<text x="372.5" y="539" style="fill: #33322E;font-weight:normal;">#current_depth: number</text>
+<text x="372.5" y="554" style="fill: #33322E;font-weight:normal;">#current_selection: number</text>
+<text x="372.5" y="569" style="fill: #33322E;font-weight:normal;">#refreshNB: number</text>
+<text x="372.5" y="584" style="fill: #33322E;font-weight:normal;">+searchTerm: string</text>
+<text x="372.5" y="599" style="fill: #33322E;font-weight:normal;">+searchSelection: number</text>
+<text x="372.5" y="614" style="fill: #33322E;font-weight:normal;">#watchTime: number</text>
+<text x="372.5" y="629" style="fill: #33322E;font-weight:normal;">#page: any</text>
+<text x="372.5" y="644" style="fill: #33322E;font-weight:normal;">+video_id: string</text>
+<text x="372.5" y="659" style="fill: #33322E;font-weight:normal;">#channel_id: string</text>
+<text x="372.5" y="674" style="fill: #33322E;font-weight:normal;">#scrapper: Scrapper</text>
+<text x="372.5" y="689" style="fill: #33322E;font-weight:normal;">+id: number</text>
+<text x="372.5" y="704" style="fill: #33322E;font-weight:normal;">+getAll: boolean</text>
+<text x="372.5" y="719" style="fill: #33322E;font-weight:normal;">#alea: number</text>
+<text x="372.5" y="734" style="fill: #33322E;font-weight:normal;">+actionNB: number</text>
+<text x="372.5" y="749" style="fill: #33322E;font-weight:normal;">+videoViewsNB: number</text>
+<path d="M364.5 758.5 L694.5 758.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="372.5" y="780" style="fill: #33322E;font-weight:normal;">+lauchCmd(): Promise&lt;void&gt;</text>
+<text x="372.5" y="795" style="fill: #33322E;font-weight:normal;">+executeFonction(): Promise&lt;void&gt;</text>
+<text x="372.5" y="810" style="fill: #33322E;font-weight:normal;">+postConf(): Promise&lt;void&gt;</text>
+<text x="372.5" y="825" style="fill: #33322E;font-weight:normal;">+search(): Promise&lt;any&gt;</text>
+<text x="372.5" y="840" style="fill: #33322E;font-weight:normal;">+clickOn(): Promise&lt;void&gt;</text>
+<text x="372.5" y="855" style="fill: #33322E;font-weight:normal;">+clickHome(): Promise&lt;void&gt;</text>
+<text x="372.5" y="870" style="fill: #33322E;font-weight:normal;">+setRefreshNB(): void</text>
+<text x="372.5" y="885" style="fill: #33322E;font-weight:normal;">+getFullHomepage(): Promise&lt;void&gt;</text>
+<text x="372.5" y="900" style="fill: #33322E;font-weight:normal;">+scrollUntil(): Promise&lt;void&gt;</text>
+<rect x="782.5" y="497.5" height="295" width="339" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/abstract/scrapper.ts.Scrapper" xlink:href="src/abstract/scrapper.ts"><text x="952" y="519" style="fill: #33322E;text-anchor: middle;">Scrapper</text></a>
+<path d="M782.5 528.5 L1121.5 528.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M782.5 536.5 L1121.5 536.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="790.5" y="558" style="fill: #33322E;font-weight:normal;">+getFullHtml(): Promise&lt;any&gt;</text>
+<text x="790.5" y="573" style="fill: #33322E;font-weight:normal;">+getElement(): Promise&lt;any&gt;</text>
+<text x="790.5" y="588" style="fill: #33322E;font-weight:normal;">+getProposals(): Promise&lt;any&gt;</text>
+<text x="790.5" y="603" style="fill: #33322E;font-weight:normal;">+getProposalAuthor(): Promise&lt;any&gt;</text>
+<text x="790.5" y="618" style="fill: #33322E;font-weight:normal;">+getHomeProposals(): Promise&lt;any&gt;</text>
+<text x="790.5" y="633" style="fill: #33322E;font-weight:normal;">+getChannelFilter(): Promise&lt;any&gt;</text>
+<text x="790.5" y="648" style="fill: #33322E;font-weight:normal;">+getHomeChanels(): Promise&lt;any&gt;</text>
+<text x="790.5" y="663" style="fill: #33322E;font-weight:normal;">+getHomeViews(): Promise&lt;any&gt;</text>
+<text x="790.5" y="678" style="fill: #33322E;font-weight:normal;">+getHomeDate(): Promise&lt;any&gt;</text>
+<text x="790.5" y="693" style="fill: #33322E;font-weight:normal;">+getHomeDuration(): Promise&lt;any&gt;</text>
+<text x="790.5" y="708" style="fill: #33322E;font-weight:normal;">+getHomeTitles(): Promise&lt;any&gt;</text>
+<text x="790.5" y="723" style="fill: #33322E;font-weight:normal;">+getHomeUrls(): Promise&lt;any&gt;</text>
+<text x="790.5" y="738" style="fill: #33322E;font-weight:normal;">+getChannelTitle(): Promise&lt;any&gt;</text>
+<text x="790.5" y="753" style="fill: #33322E;font-weight:normal;">+getTitle(): Promise&lt;any&gt;</text>
+<text x="790.5" y="768" style="fill: #33322E;font-weight:normal;">+getAuthor(): Promise&lt;any&gt;</text>
+<text x="790.5" y="783" style="fill: #33322E;font-weight:normal;">+fill(): Promise&lt;any&gt;</text>
+<rect x="1185.5" y="1534.5" height="70" width="273" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/jobs/autoplay.ts.Autoplay" xlink:href="src/jobs/autoplay.ts"><text x="1322" y="1556" style="fill: #33322E;text-anchor: middle;">Autoplay</text></a>
+<path d="M1185.5 1565.5 L1458.5 1565.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1185.5 1573.5 L1458.5 1573.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1193.5" y="1595" style="fill: #33322E;font-weight:normal;">+execute(): Promise&lt;number&gt;</text>
+<rect x="1498.5" y="1534.5" height="70" width="273" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/jobs/channelSniffer.ts.ChannelSniffer" xlink:href="src/jobs/channelSniffer.ts"><text x="1635" y="1556" style="fill: #33322E;text-anchor: middle;">ChannelSniffer</text></a>
+<path d="M1498.5 1565.5 L1771.5 1565.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1498.5 1573.5 L1771.5 1573.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1506.5" y="1595" style="fill: #33322E;font-weight:normal;">+execute(): Promise&lt;number&gt;</text>
+<rect x="1811.5" y="1534.5" height="70" width="273" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/jobs/fetch.ts.Fetch" xlink:href="src/jobs/fetch.ts"><text x="1948" y="1556" style="fill: #33322E;text-anchor: middle;">Fetch</text></a>
+<path d="M1811.5 1565.5 L2084.5 1565.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M1811.5 1573.5 L2084.5 1573.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1819.5" y="1595" style="fill: #33322E;font-weight:normal;">+execute(): Promise&lt;number&gt;</text>
+<rect x="2124.5" y="1534.5" height="70" width="273" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/jobs/fetchAutoplay.ts.FetchAutoplay" xlink:href="src/jobs/fetchAutoplay.ts"><text x="2261" y="1556" style="fill: #33322E;text-anchor: middle;">FetchAutoplay</text></a>
+<path d="M2124.5 1565.5 L2397.5 1565.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M2124.5 1573.5 L2397.5 1573.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2132.5" y="1595" style="fill: #33322E;font-weight:normal;">+execute(): Promise&lt;number&gt;</text>
+<rect x="1550.5" y="591.5" height="108" width="168" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/jobs/job.ts.Job" xlink:href="src/jobs/job.ts"><text x="1634.5" y="613" style="fill: #33322E;text-anchor: middle;">Job</text></a>
+<path d="M1550.5 622.5 L1718.5 622.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1558.5" y="644" style="fill: #33322E;font-weight:normal;">+action: Action</text>
+<text x="1558.5" y="659" style="fill: #33322E;font-weight:normal;">#page: any</text>
+<path d="M1550.5 668.5 L1718.5 668.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1558.5" y="690" style="fill: #33322E;font-weight:normal;">+execute(): void</text>
+<rect x="2437.5" y="1534.5" height="70" width="273" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/jobs/watchOne.ts.WatchOne" xlink:href="src/jobs/watchOne.ts"><text x="2574" y="1556" style="fill: #33322E;text-anchor: middle;">WatchOne</text></a>
+<path d="M2437.5 1565.5 L2710.5 1565.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M2437.5 1573.5 L2710.5 1573.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2445.5" y="1595" style="fill: #33322E;font-weight:normal;">+execute(): Promise&lt;number&gt;</text>
+<rect x="1758.5" y="565.5" height="160" width="320" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/selectors.ts.Common" xlink:href="src/module/youtube/selectors.ts"><text x="1918.5" y="587" style="fill: #33322E;text-anchor: middle;">Common</text></a>
+<path d="M1758.5 596.5 L2078.5 596.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="1766.5" y="618" style="fill: #33322E;font-weight:normal;">+static __URL__: string</text>
+<text x="1766.5" y="633" style="fill: #33322E;font-weight:normal;">+static __SEARCHINPUT__: string</text>
+<text x="1766.5" y="648" style="fill: #33322E;font-weight:normal;">+static __SEARCHBUTTON__: string</text>
+<text x="1766.5" y="663" style="fill: #33322E;font-weight:normal;">+static __AGREEBUTTON__: string</text>
+<text x="1766.5" y="678" style="fill: #33322E;font-weight:normal;">+static __AGREEBUTTON2__: string</text>
+<text x="1766.5" y="693" style="fill: #33322E;font-weight:normal;">+static __NOSIGNBUTTON__: string</text>
+<text x="1766.5" y="708" style="fill: #33322E;font-weight:normal;">+static __HOMEBUTTON__: string</text>
+<path d="M1758.5 717.5 L2078.5 717.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<rect x="2118.5" y="587.5" height="115" width="344" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/selectors.ts.Homepage" xlink:href="src/module/youtube/selectors.ts"><text x="2290.5" y="609" style="fill: #33322E;text-anchor: middle;">Homepage</text></a>
+<path d="M2118.5 618.5 L2462.5 618.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2126.5" y="640" style="fill: #33322E;font-weight:normal;">+static __PROPOSALS__: string</text>
+<text x="2126.5" y="655" style="fill: #33322E;font-weight:normal;">+static __ELEMENT__URL: string</text>
+<text x="2126.5" y="670" style="fill: #33322E;font-weight:normal;">+static __ELEMENT__TITLE: string</text>
+<text x="2126.5" y="685" style="fill: #33322E;font-weight:normal;">+static __ELEMENT__CHANNEL: string</text>
+<path d="M2118.5 694.5 L2462.5 694.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<rect x="2502.5" y="467.5" height="355" width="363" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/selectors.ts.VideoPage" xlink:href="src/module/youtube/selectors.ts"><text x="2684" y="489" style="fill: #33322E;text-anchor: middle;">VideoPage</text></a>
+<path d="M2502.5 498.5 L2865.5 498.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2510.5" y="520" style="fill: #33322E;font-weight:normal;">+static __CATEGORY__: string</text>
+<text x="2510.5" y="535" style="fill: #33322E;font-weight:normal;">+static __VIEWS__: string</text>
+<text x="2510.5" y="550" style="fill: #33322E;font-weight:normal;">+static __REGIONALLOWED__: string</text>
+<text x="2510.5" y="565" style="fill: #33322E;font-weight:normal;">+static __UNLISTED__: string</text>
+<text x="2510.5" y="580" style="fill: #33322E;font-weight:normal;">+static __PAID__: string</text>
+<text x="2510.5" y="595" style="fill: #33322E;font-weight:normal;">+static __DESCRIPTION__: string</text>
+<text x="2510.5" y="610" style="fill: #33322E;font-weight:normal;">+static __ISFAMILYFRIENDLY__: string</text>
+<text x="2510.5" y="625" style="fill: #33322E;font-weight:normal;">+static __SUBSCRIBERS__: string</text>
+<text x="2510.5" y="640" style="fill: #33322E;font-weight:normal;">+static __DURATION__: string</text>
+<text x="2510.5" y="655" style="fill: #33322E;font-weight:normal;">+static __DATE__: string</text>
+<text x="2510.5" y="670" style="fill: #33322E;font-weight:normal;">+static __COMMENT__: string</text>
+<text x="2510.5" y="685" style="fill: #33322E;font-weight:normal;">+static __DISLIKE__: string</text>
+<text x="2510.5" y="700" style="fill: #33322E;font-weight:normal;">+static __LIKE__: string</text>
+<text x="2510.5" y="715" style="fill: #33322E;font-weight:normal;">+static __TAGS__: string</text>
+<text x="2510.5" y="730" style="fill: #33322E;font-weight:normal;">+static __AUTHOR__: string</text>
+<text x="2510.5" y="745" style="fill: #33322E;font-weight:normal;">+static __TITLE__: string</text>
+<text x="2510.5" y="760" style="fill: #33322E;font-weight:normal;">+static __AUTOPLAY__: string</text>
+<text x="2510.5" y="775" style="fill: #33322E;font-weight:normal;">+static __AUTOPLAY__TITLE: string</text>
+<text x="2510.5" y="790" style="fill: #33322E;font-weight:normal;">+static __AUTOPLAY__URL: string</text>
+<text x="2510.5" y="805" style="fill: #33322E;font-weight:normal;">+static __PROPOSALS__: string</text>
+<path d="M2502.5 814.5 L2865.5 814.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<rect x="2905.5" y="580.5" height="130" width="387" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/selectors.ts.SearchPage" xlink:href="src/module/youtube/selectors.ts"><text x="3099" y="602" style="fill: #33322E;text-anchor: middle;">SearchPage</text></a>
+<path d="M2905.5 611.5 L3292.5 611.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="2913.5" y="633" style="fill: #33322E;font-weight:normal;">+static __TITLE__: string</text>
+<text x="2913.5" y="648" style="fill: #33322E;font-weight:normal;">+static __CHANNELFILTER__: string</text>
+<text x="2913.5" y="663" style="fill: #33322E;font-weight:normal;">+static __CHANNELFILTERBUTTON__: string</text>
+<text x="2913.5" y="678" style="fill: #33322E;font-weight:normal;">+static __RESULTELEMENT1__: string</text>
+<text x="2913.5" y="693" style="fill: #33322E;font-weight:normal;">+static __RESULTELEMENT2__: string</text>
+<path d="M2905.5 702.5 L3292.5 702.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<rect x="3332.5" y="610.5" height="70" width="320" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/selectors.ts.ChannelPage" xlink:href="src/module/youtube/selectors.ts"><text x="3492.5" y="632" style="fill: #33322E;text-anchor: middle;">ChannelPage</text></a>
+<path d="M3332.5 641.5 L3652.5 641.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3340.5" y="663" style="fill: #33322E;font-weight:normal;">+static __VIDEOSBUTTON__: string</text>
+<path d="M3332.5 672.5 L3652.5 672.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<rect x="3692.5" y="13.5" height="1263" width="301" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/video.ts.Video" xlink:href="src/module/youtube/video.ts"><text x="3843" y="35" style="fill: #33322E;text-anchor: middle;">Video</text></a>
+<path d="M3692.5 44.5 L3993.5 44.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3700.5" y="66" style="fill: #33322E;font-weight:normal;">-url: string</text>
+<text x="3700.5" y="81" style="fill: #33322E;font-weight:normal;">-title: string</text>
+<text x="3700.5" y="96" style="fill: #33322E;font-weight:normal;">-parent_id: string</text>
+<text x="3700.5" y="111" style="fill: #33322E;font-weight:normal;">-views: string</text>
+<text x="3700.5" y="126" style="fill: #33322E;font-weight:normal;">-depth: number</text>
+<text x="3700.5" y="141" style="fill: #33322E;font-weight:normal;">-author: string</text>
+<text x="3700.5" y="156" style="fill: #33322E;font-weight:normal;">-tags: string[]</text>
+<text x="3700.5" y="171" style="fill: #33322E;font-weight:normal;">-category: string</text>
+<text x="3700.5" y="186" style="fill: #33322E;font-weight:normal;">-date: string</text>
+<text x="3700.5" y="201" style="fill: #33322E;font-weight:normal;">-duration: string</text>
+<text x="3700.5" y="216" style="fill: #33322E;font-weight:normal;">-subscribers: string</text>
+<text x="3700.5" y="231" style="fill: #33322E;font-weight:normal;">-isFamilyFriendly: string</text>
+<text x="3700.5" y="246" style="fill: #33322E;font-weight:normal;">-description: string</text>
+<text x="3700.5" y="261" style="fill: #33322E;font-weight:normal;">-paid: string</text>
+<text x="3700.5" y="276" style="fill: #33322E;font-weight:normal;">-unlisted: string</text>
+<text x="3700.5" y="291" style="fill: #33322E;font-weight:normal;">-regionAllowed: string[]</text>
+<text x="3700.5" y="306" style="fill: #33322E;font-weight:normal;">-apiYoutube: string</text>
+<text x="3700.5" y="321" style="fill: #33322E;font-weight:normal;">-homePosition: number</text>
+<text x="3700.5" y="336" style="fill: #33322E;font-weight:normal;">-refreshNB: number</text>
+<text x="3700.5" y="351" style="fill: #33322E;font-weight:normal;">-ytkids: string</text>
+<text x="3700.5" y="366" style="fill: #33322E;font-weight:normal;">-bodyHtml: string</text>
+<text x="3700.5" y="381" style="fill: #33322E;font-weight:normal;">-like: string</text>
+<text x="3700.5" y="396" style="fill: #33322E;font-weight:normal;">-dislike: string</text>
+<text x="3700.5" y="411" style="fill: #33322E;font-weight:normal;">-comment: string</text>
+<text x="3700.5" y="426" style="fill: #33322E;font-weight:normal;">-type: string</text>
+<text x="3700.5" y="441" style="fill: #33322E;font-weight:normal;">-insertionDate: Date</text>
+<text x="3700.5" y="456" style="fill: #33322E;font-weight:normal;">-watchTime: number</text>
+<text x="3700.5" y="471" style="fill: #33322E;font-weight:normal;">-actionNB: number</text>
+<text x="3700.5" y="486" style="fill: #33322E;font-weight:normal;">-videoViewsNB: number</text>
+<path d="M3692.5 495.5 L3993.5 495.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="3700.5" y="517" style="fill: #33322E;font-weight:normal;">+setParentId(): void</text>
+<text x="3700.5" y="532" style="fill: #33322E;font-weight:normal;">+setType(): void</text>
+<text x="3700.5" y="547" style="fill: #33322E;font-weight:normal;">+setTitle(): void</text>
+<text x="3700.5" y="562" style="fill: #33322E;font-weight:normal;">+setViews(): void</text>
+<text x="3700.5" y="577" style="fill: #33322E;font-weight:normal;">+setAuthor(): void</text>
+<text x="3700.5" y="592" style="fill: #33322E;font-weight:normal;">+setTags(): void</text>
+<text x="3700.5" y="607" style="fill: #33322E;font-weight:normal;">+setCategory(): void</text>
+<text x="3700.5" y="622" style="fill: #33322E;font-weight:normal;">+setDate(): void</text>
+<text x="3700.5" y="637" style="fill: #33322E;font-weight:normal;">+setDuration(): void</text>
+<text x="3700.5" y="652" style="fill: #33322E;font-weight:normal;">+setSubscibers(): void</text>
+<text x="3700.5" y="667" style="fill: #33322E;font-weight:normal;">+setIsFamilyFriendly(): void</text>
+<text x="3700.5" y="682" style="fill: #33322E;font-weight:normal;">+setDescription(): void</text>
+<text x="3700.5" y="697" style="fill: #33322E;font-weight:normal;">+setPaid(): void</text>
+<text x="3700.5" y="712" style="fill: #33322E;font-weight:normal;">+setUnlisted(): void</text>
+<text x="3700.5" y="727" style="fill: #33322E;font-weight:normal;">+setRegionAllowed(): void</text>
+<text x="3700.5" y="742" style="fill: #33322E;font-weight:normal;">+setHomePosition(): void</text>
+<text x="3700.5" y="757" style="fill: #33322E;font-weight:normal;">+setRefreshNB(): void</text>
+<text x="3700.5" y="772" style="fill: #33322E;font-weight:normal;">+setYtkids(): void</text>
+<text x="3700.5" y="787" style="fill: #33322E;font-weight:normal;">+setBodyHtml(): void</text>
+<text x="3700.5" y="802" style="fill: #33322E;font-weight:normal;">+setLike(): void</text>
+<text x="3700.5" y="817" style="fill: #33322E;font-weight:normal;">+setDislike(): void</text>
+<text x="3700.5" y="832" style="fill: #33322E;font-weight:normal;">+setWatchTime(): void</text>
+<text x="3700.5" y="847" style="fill: #33322E;font-weight:normal;">+setComment(): void</text>
+<text x="3700.5" y="862" style="fill: #33322E;font-weight:normal;">+setActionNB(): void</text>
+<text x="3700.5" y="877" style="fill: #33322E;font-weight:normal;">+addVideoViews(): void</text>
+<text x="3700.5" y="892" style="fill: #33322E;font-weight:normal;">+getVideoViewsNB(): number</text>
+<text x="3700.5" y="907" style="fill: #33322E;font-weight:normal;">+getActionNB(): number</text>
+<text x="3700.5" y="922" style="fill: #33322E;font-weight:normal;">+getComment(): string</text>
+<text x="3700.5" y="937" style="fill: #33322E;font-weight:normal;">+getWatchTime(): number</text>
+<text x="3700.5" y="952" style="fill: #33322E;font-weight:normal;">+getDislike(): string</text>
+<text x="3700.5" y="967" style="fill: #33322E;font-weight:normal;">+getLike(): string</text>
+<text x="3700.5" y="982" style="fill: #33322E;font-weight:normal;">+getBodyHtml(): string</text>
+<text x="3700.5" y="997" style="fill: #33322E;font-weight:normal;">+getYtkids(): string</text>
+<text x="3700.5" y="1012" style="fill: #33322E;font-weight:normal;">+getRefreshNB(): number</text>
+<text x="3700.5" y="1027" style="fill: #33322E;font-weight:normal;">+getHomePosition(): number</text>
+<text x="3700.5" y="1042" style="fill: #33322E;font-weight:normal;">+getRegionAllowed(): string[]</text>
+<text x="3700.5" y="1057" style="fill: #33322E;font-weight:normal;">+getUnlisted(): string</text>
+<text x="3700.5" y="1072" style="fill: #33322E;font-weight:normal;">+getPaid(): string</text>
+<text x="3700.5" y="1087" style="fill: #33322E;font-weight:normal;">+getDescription(): string</text>
+<text x="3700.5" y="1102" style="fill: #33322E;font-weight:normal;">+getIsFamilyFriendly(): string</text>
+<text x="3700.5" y="1117" style="fill: #33322E;font-weight:normal;">+getSubscribers(): string</text>
+<text x="3700.5" y="1132" style="fill: #33322E;font-weight:normal;">+getDuration(): string</text>
+<text x="3700.5" y="1147" style="fill: #33322E;font-weight:normal;">+getDate(): string</text>
+<text x="3700.5" y="1162" style="fill: #33322E;font-weight:normal;">+getCategory(): string</text>
+<text x="3700.5" y="1177" style="fill: #33322E;font-weight:normal;">+getTags(): string[]</text>
+<text x="3700.5" y="1192" style="fill: #33322E;font-weight:normal;">+getAuthor(): string</text>
+<text x="3700.5" y="1207" style="fill: #33322E;font-weight:normal;">+getDepth(): number</text>
+<text x="3700.5" y="1222" style="fill: #33322E;font-weight:normal;">+getParentId(): string</text>
+<text x="3700.5" y="1237" style="fill: #33322E;font-weight:normal;">+getTitle(): string</text>
+<text x="3700.5" y="1252" style="fill: #33322E;font-weight:normal;">+getViews(): string</text>
+<text x="3700.5" y="1267" style="fill: #33322E;font-weight:normal;">+getUrl(): string</text>
+<rect x="758.5" y="1316.5" height="505" width="387" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/videoScrapper.ts.VideoScrapper" xlink:href="src/module/youtube/videoScrapper.ts"><text x="952" y="1338" style="fill: #33322E;text-anchor: middle;">VideoScrapper</text></a>
+<path d="M758.5 1347.5 L1145.5 1347.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M758.5 1355.5 L1145.5 1355.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="766.5" y="1377" style="fill: #33322E;font-weight:normal;">+getChannelFilter(): Promise&lt;any&gt;</text>
+<text x="766.5" y="1392" style="fill: #33322E;font-weight:normal;">+getChannelTitle(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1407" style="fill: #33322E;font-weight:normal;">+getHomeProposals(): Promise&lt;any&gt;</text>
+<text x="766.5" y="1422" style="fill: #33322E;font-weight:normal;">+getHomeChanels(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1437" style="fill: #33322E;font-weight:normal;">+getHomeViews(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1452" style="fill: #33322E;font-weight:normal;">+getHomeDate(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1467" style="fill: #33322E;font-weight:normal;">+getHomeDuration(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1482" style="fill: #33322E;font-weight:normal;">+getHomeTitles(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1497" style="fill: #33322E;font-weight:normal;">+getHomeUrls(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1512" style="fill: #33322E;font-weight:normal;">+getSearchTitle(): Promise&lt;string[]&gt;</text>
+<text x="766.5" y="1527" style="fill: #33322E;font-weight:normal;">+fill(): Promise&lt;void&gt;</text>
+<text x="766.5" y="1542" style="fill: #33322E;font-weight:normal;">+getProposals(): Promise&lt;any&gt;</text>
+<text x="766.5" y="1557" style="fill: #33322E;font-weight:normal;">+getProposalTitle(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1572" style="fill: #33322E;font-weight:normal;">+getProposalAuthor(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1587" style="fill: #33322E;font-weight:normal;">+getTitle(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1602" style="fill: #33322E;font-weight:normal;">+getAuthor(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1617" style="fill: #33322E;font-weight:normal;">+getTags(): Promise&lt;string[]&gt;</text>
+<text x="766.5" y="1632" style="fill: #33322E;font-weight:normal;">+getLike(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1647" style="fill: #33322E;font-weight:normal;">+getDislike(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1662" style="fill: #33322E;font-weight:normal;">+getComment(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1677" style="fill: #33322E;font-weight:normal;">+getDate(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1692" style="fill: #33322E;font-weight:normal;">+getDuration(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1707" style="fill: #33322E;font-weight:normal;">+getSubscribers(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1722" style="fill: #33322E;font-weight:normal;">+getIsFamilyFriendly(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1737" style="fill: #33322E;font-weight:normal;">+getDescription(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1752" style="fill: #33322E;font-weight:normal;">+getPaid(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1767" style="fill: #33322E;font-weight:normal;">+getUnlisted(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1782" style="fill: #33322E;font-weight:normal;">+getRegionAllowed(): Promise&lt;string[]&gt;</text>
+<text x="766.5" y="1797" style="fill: #33322E;font-weight:normal;">+getCategory(): Promise&lt;string&gt;</text>
+<text x="766.5" y="1812" style="fill: #33322E;font-weight:normal;">+getViews(): Promise&lt;string&gt;</text>
+<rect x="341.5" y="1384.5" height="370" width="377" style="stroke:#33322E;fill:#eee8d5;stroke-dasharray:none;"></rect>
+<a id="src/module/youtube/youtubeAction.ts.YoutubeAction" xlink:href="src/module/youtube/youtubeAction.ts"><text x="530" y="1406" style="fill: #33322E;text-anchor: middle;">YoutubeAction</text></a>
+<path d="M341.5 1415.5 L718.5 1415.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<path d="M341.5 1423.5 L718.5 1423.5" style="stroke:#33322E;fill:none;stroke-dasharray:none;"></path>
+<text x="349.5" y="1445" style="fill: #33322E;font-weight:normal;">+postConf(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1460" style="fill: #33322E;font-weight:normal;">+preCondition(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1475" style="fill: #33322E;font-weight:normal;">+noSign(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1490" style="fill: #33322E;font-weight:normal;">+scrollUntil(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1505" style="fill: #33322E;font-weight:normal;">+scrollUntilId(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1520" style="fill: #33322E;font-weight:normal;">+scrollToEnd(): Promise&lt;number&gt;</text>
+<text x="349.5" y="1535" style="fill: #33322E;font-weight:normal;">+scrollUntilChannelId(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1550" style="fill: #33322E;font-weight:normal;">+clickHome(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1565" style="fill: #33322E;font-weight:normal;">+clickOnChannelFilter(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1580" style="fill: #33322E;font-weight:normal;">+clickOn(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1595" style="fill: #33322E;font-weight:normal;">+getProposals(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1610" style="fill: #33322E;font-weight:normal;">+searchChannel(): Promise&lt;any&gt;</text>
+<text x="349.5" y="1625" style="fill: #33322E;font-weight:normal;">+search(): Promise&lt;any&gt;</text>
+<text x="349.5" y="1640" style="fill: #33322E;font-weight:normal;">+getRandomArbitrary(): number</text>
+<text x="349.5" y="1655" style="fill: #33322E;font-weight:normal;">+getAlea(): number</text>
+<text x="349.5" y="1670" style="fill: #33322E;font-weight:normal;">+getFullHomepage(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1685" style="fill: #33322E;font-weight:normal;">+getRandomInt(): number</text>
+<text x="349.5" y="1700" style="fill: #33322E;font-weight:normal;">+getRandomHomeElement(): Promise&lt;any&gt;</text>
+<text x="349.5" y="1715" style="fill: #33322E;font-weight:normal;">+getAutoplay(): Promise&lt;any&gt;</text>
+<text x="349.5" y="1730" style="fill: #33322E;font-weight:normal;">+fillAutoplaysearch(): Promise&lt;void&gt;</text>
+<text x="349.5" y="1745" style="fill: #33322E;font-weight:normal;">+isFullyLoad(): Promise&lt;void&gt;</text>
+</svg>

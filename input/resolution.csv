@@ -1,0 +1,23 @@
+"Taille de l'écran",format,width,height
+"13 pouces (ancien)","classique (4/3)",800,600
+"15 pouces","classique (4/3)",1024,768
+"15,4 pouces","16/10",1280,800
+"19 pouces","16/9",1366,768
+"19 pouces","16/9",1360,768
+"17 et 19 pouces","classique (4/3)",1280,1024
+"19 pouces","large (16/10, wide)",1440,900
+"19 pouces","4/3",1280,960
+"20 pouces","classique (4/3)",1400,1050
+"20, 21 et 22 pouces","classique (4/3)",1600,1200
+"20 pouces","large (16/9, wide)",1600,900
+"20, 21 et 22 pouces","large (16/10, wide)",1680,1050
+"22 pouces","large (16/9, wide)",1920,1080
+"23, 24, 26 et 27 pouces","large (16/10, wide)",1920,1200
+"23, 24, 26 et 27 pouces","large (16/9, wide)",1920,1080
+"27 pouces","large (16/9, wide)",2560,1440
+"30 pouces ","large (16/10, wide)",2560,1600
+"29 pouces","Large (21:9)",2560,1080
+"34 pouces","Large (21:9)",3440,1440
+"27, 28, 32 pouces","4K",3840,2160
+"27, 28, 32 pouces","16/9 5K",5120,2880
+"27, 28, 32 pouces","8K",7680,4320

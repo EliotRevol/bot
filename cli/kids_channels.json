@@ -1,0 +1,32 @@
+[
+  {
+    "channel": "Peppa Pig Français - Chaîne Officielle",
+    "id": "c/PeppaPigFR",
+    "type": "kids"
+  },
+  {
+    "channel": "ChuChu TV Nursery Rhymes & Kids Songs",
+    "id": "/c/ChuChuTV",
+    "type": "kids"
+  },
+  {
+    "channel": "El Reino Infantil",
+    "id": "/c/elreinoinfantil",
+    "type": "kids"
+  },
+  {
+    "channel": "Little Baby Bum - Nursery Rhymes & Kids Songs",
+    "id": "/user/LittleBabyBum",
+    "type": "kids"
+  },
+  {
+    "channel": "Masha and The Bear",
+    "id": "/c/MashaBearEN",
+    "type": "kids"
+  },
+  {
+    "channel": "Ryan s World",
+    "id": "/c/RyanToysReview",
+    "type": "kids"
+  }
+]

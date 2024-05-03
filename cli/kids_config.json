@@ -1,0 +1,19 @@
+{
+  "experiment": "kids-watch",
+  "naming": "autoplay",
+  "save_html": true,
+  "transcript_language": [
+    "en"
+  ],
+  "lang": "en",
+  "nb_runs": 1000,
+  "nb_walks": 20,
+  "watch_time": 300000,
+  "store_folder": "output-kids",
+  "channels": "kids_channels.json",
+  "resolve_regex": "*20*.csv",
+  "random_start": true,
+  "waiting_seconds": 600,
+  "channel_sniffing_reload_hour": 720,
+  "alea": 30000
+}

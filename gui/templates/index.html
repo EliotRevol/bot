@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Election présidentielle 2022: Observer la représentation politique sur YouTube</title>
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="static/css/style.css" rel="stylesheet">
+
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/popper.js"></script>
+
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/socket.io.js"></script>
+
+    <!--    <script src="static/js/script.js"></script>-->
+    <script src="static/js/d3.min.js"></script>
+    <script src="static/js/bar_chart.js"></script>
+    <script src="static/js/election.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="bg-image"
+         style="background-image: url('../static/images/banner.png'); height: 400px; max-width: 100%;  ">
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="topVideosModal" tabindex="-1" role="dialog" aria-labelledby="topVideosModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="topVideosModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--                    <div class="list-group" id="modal-list-group">-->
+
+                    <!--                        &lt;!&ndash;                        <a href="#" class="list-group-item list-group-item-action">A second link item</a>&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                        <a href="#" class="list-group-item list-group-item-action">A third link item</a>&ndash;&gt;-->
+                    <!--                        &lt;!&ndash;                        <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>&ndash;&gt;-->
+
+                    <!--                    </div>-->
+                    <ul class="list-group" id="modal-list-group">
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <!--        <button type="button" class="btn btn-primary">Save changes</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="px-4 py-5 my-5 text-right">
+        <h1 class="display-5 fw-bold"> Exposition des candidats à l'élection présidentielle Française sur YouTube</h1>
+        <br>
+        <hr class="featurette-divider">
+        <h2 class="display-7 fw-bold float-right" id="title-fig1"></h2>
+        <div class="col-lg-12 py-5 mx-auto" style="padding-bottom: 2em!important;">
+
+            <div class="row text-center " id="welcome-fetch-title-ratio">
+
+            </div><!-- /.row -->
+
+            <div style="text-align: center;">Cliquez sur un.e candidat.e pour voir son top-5 des vidéos le.a
+                concernant.
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <h2 class="display-7 fw-bold">Evolution temporelle de ces recommandations</h2>
+
+        <div class="col-lg-12 py-5 mx-auto" id="title_checkbox" style="padding-top: 1em!important">
+            {% include 'title_plot_checkbox.html' %}
+        </div>
+
+
+        <div class="px-4 float-right">
+
+            <dl class="text-right">
+                <dt>Qu'est-ce qu'une recommandation politique ?</dt>
+                <dd>Nous considérons comme "recommandation politique" toute recommandation dont le titre contient le
+                    nom d'un des 12 candidats.
+                </dd>
+
+                <dt> Dans quel contexte observez-vous ces recommandations ?</dt>
+                <dd> Ce sont des recommandations collectées à l'aide de robots sans passé, c'est à dire ayant des
+                    historiques de visionnage vierges. Ces robots collectent les informations plusieurs fois par heure,
+                    et ce sur la page d'accueil de YouTube. En d'autres termes, ces informations sont similaires aux
+                    recommandations d'un usager visitant YouTube en mode "incognito" (voir cette option dans le
+                    navigateur Firefox par exemple).
+                </dd>
+                <dt> Comment déterminez-vous les recommandations portant sur le candidat XYZ ?</dt>
+                <dd>Nous considérons qu'une recommandation dont le titre contient XYZ porte sur le candidat XYZ.
+                    Celle-ci peut aussi contenir le nom d'autres candidats, dans ce cas celle-ci compte pour
+                    tous les candidats dont le nom apparaît.
+                </dd>
+                <dt>Votre méthode ne prend pas en compte le cas ABCD:</dt>
+                <dd> Oui. En particulier,
+                    <ul>
+                        <li> nous ne capturons pas les effets de la personalisation de YouTube vers des profils
+                            utilisateurs récurrents.
+                        </li>
+                        <li> nous n'accédons pas au niveau sémantique des vidéos, ainsi des vidéos dont le titre se
+                            réfère
+                            à un candidat, mais dont le contenu y est ouvertement opposé comptera au même titre qu'une
+                            vidéo le supportant.
+                        </li>
+                        <li> nous ne comptons pas les vidéos concernant les soutiens des candidats, si celles ci ne
+                            comportent pas leur nom dans le titre.
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+
+        <br>
+        <hr class="featurette-divider">
+        <h2 class="display-7 fw-bold"> Exposition des candidats: YouTube vs Médias Traditionnels </h2>
+        <div class="col-lg-12 py-5 mx-auto" id="csa_transcript_duration">
+
+        </div>
+        <div class="px-4 py-2 text-center">28 Mars - 8 Avril</div>
+        <div class="px-4 float-right">
+            <dl>
+                <dt> Que signifient les colonnes en orange ?</dt>
+                <dd> Il s'agit des temps de parole déclarés par les médias et disponible <a
+                        href="https://www.csa.fr/csaelections/tempspresidentielle2022"
+                        target=_blank>ici.</a></dd>
+                <dt> Que signifient les colonnes en bleu ?</dt>
+                <dd> Il s'agit du pourcentage des mentions dans le titre pour un candidat donné.
+                    Nous mettons en relation ces deux quantités de nature différente en tant que deux mesures
+                    d'exposition différentes,
+                    la première régulée, et la deuxième découlant des choix de l'algorithme de recommandation de
+                    YouTube.
+                </dd>
+            </dl>
+        </div>
+        <!--        <div class="col-lg-12 py-5 mx-auto" id="transcript-welcome-walk-over-time-chart">-->
+
+        <!--        </div>-->
+
+        <br>
+        <hr class="featurette-divider">
+        <h2 class="display-7 fw-bold"> Au delà des titres: les sous-titres </h2>
+
+        <div class="col-lg-12 py-5 mx-auto" id="transcript_checkbox">
+            {% include 'transcript_plot_checkbox.html' %}
+        </div>
+
+
+        <div class="px-4 float-right">
+            <dl>
+                <dt> Que comptez-vous ?</dt>
+                <dd> Ici des robots sans passé regardent (50 secondes) une vidéo au hasard proposée sur la page
+                    d'accueil, et les 4 vidéos suivantes proposées ensuite en "autoplay". Pour ces 5 vidéos regardées,
+                    nous extrayons l'intégralité des sous-titres et comptons la durée des phrases contenant une mention
+                    de l'un des candidats.
+                </dd>
+                <dt> Vous pouvez activer/désactiver la courbe correspondant à chaque candidat en cliquant sur son nom
+                    dans la légende
+                </dt>
+                <dt> A quoi correspondent les couleurs affectées à chaque candidat ?</dt>
+                <dd> Les couleurs sont générées au hasard à chaque affichage de page.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="col-lg-12 py-5 mx-auto" id="faq">
+        <h2 class="display-6 fw-bold">FAQ</h2>
+        <dl>
+            <dt>Plus d'information pour étayer la méthode ?</dt>
+            <dd> Nous proposons un pre-print qui décrit la méthode générale de collecte et d'analyse <a
+                    href="https://hal.archives-ouvertes.fr/hal-03620039/document">ici.</a>
+            </dd>
+            <dd> Nous avons été interviewés le 29/03 sur le Media TV à ce sujet <a
+                    href="https://www.youtube.com/watch?v=ZOEJNJr79r8&t=2683s">ici.</a>
+            </dd>
+
+            <dt> Qui êtes vous ?</dt>
+            <ul>
+                <li>Nous sommes des chercheurs dans l'académique (CNRS et Inria).</li>
+                <li>Nos recherches portent sur le développement d'algorithmes pour observer et quantifier les décisions
+                    algorithmiques des platformes en ligne.
+                </li>
+                <li>Quelques exemples de nos travaux:
+                    <dl>
+                        <dd> Sur les pratiques de modération de Twitter:
+                            <a href="https://arxiv.org/abs/2012.05101"> Article </a>(Version Open Access - En) -
+                            <a href="https://techxplore.com/news/2021-01-exploring-underpinnings-shadowbanning-twitter.html">
+                                Version vulgarisée </a> (En)
+                        </dd>
+                        <dd> Sur l'explicabilité des boites noires en général :
+                            <a href="https://rdcu.be/b6qB4"> Article </a> (En) -
+                            <a href="https://interstices.info/le-probleme-du-videur-la-credibilite-des-explications-de-lia-en-question/">
+                                Version vulgarisée </a> (Fr) -
+                            <a href="https://techxplore.com/news/2020-10-explanations-data-based-users-ai.html"> Version
+                                vulgarisée </a> (En)
+                        </dd>
+                    </dl>
+
+                </li>
+                <li>Contact: <a href="https://homepages.laas.fr/gtredan" target=blank>Gilles</a> - <a
+                        href="https://erwanlemerrer.github.io" target=blank>Erwan</a> - <a
+                        href="https://www.linkedin.com/in/aliyesilkanat" target=blank>Ali</a>
+                </li>
+
+
+            </ul>
+            <dt> Que faites-vous de ces informations ?</dt>
+            <dd> Nous conservons ces informations publiques pour nourrir nos recherches, et sommes disposés à les
+                partager dans le cadre collaborations académiques ou à but informationel.
+            </dd>
+            <dt> Quid du temps de parole ?</dt>
+            <dd> La mesure du temps de parole en temps de campagne, et ce pour les medias audio-visuels est rappelée <a
+                    href="https://larevuedesmedias.ina.fr/regles-decompte-mesure-temps-parole-candidats-campagne-presidentielle-csa-election-2022">ici.</a>
+            </dd>
+        </dl>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <img src="../static/images/inriaLogo.png" class="img-fluid" style="width: 200px" alt="Responsive image">
+        </div>
+        <div class="col-4 pb-5">
+            <img src="../static/images/cnrsLogo.png" class="img-fluid" style="width: 120px" alt="Responsive image">
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

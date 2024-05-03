@@ -1,0 +1,101 @@
+
+input, button {
+    margin: 5px;
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 992px) {
+    .rounded-lg-3 {
+        border-radius: .3rem;
+    }
+}
+
+.candidate-avatar {
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+svg text {
+    font-size: initial;
+}
+
+span[class^='-swatches'] {
+    font-size: initial;
+}
+
+
+.checkbox-line-graph {
+    font: 10px sans-serif;
+}
+
+.checkbox-line-graph .axis path,
+.checkbox-line-graph .axis line,
+.checkbox-line-graph .axis1 path,
+.checkbox-line-graph .axis1 line {
+    fill: none;
+    stroke: #E6E7E8;
+    shape-rendering: crispEdges;
+}
+
+.checkbox-line-graph .x.axis path, .checkbox-line-graph .x.axis1 path {
+    display: none;
+}
+
+.checkbox-line-graph .line {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+.checkbox-line-graph .legend-box {
+    cursor: pointer;
+}
+
+.checkbox-line-graph #mouse-tracker {
+    stroke: #E6E7E8;
+    stroke-width: 1px;
+}
+
+.checkbox-line-graph .hover-line {
+    stroke: #E6E7E8;
+    fill: none;
+    stroke-width: 1px;
+    left: 10px;
+    shape-rendering: crispEdges;
+    opacity: 1e-6;
+}
+
+.checkbox-line-graph .hover-text {
+    stroke: none;
+    font-size: 30px;
+    font-weight: bold;
+    fill: #000000;
+}
+
+.checkbox-line-graph .tooltip {
+    font-weight: normal;
+}
+
+.checkbox-line-graph .brush .extent {
+    stroke: #FFF;
+    shape-rendering: crispEdges;
+}
+#csa_transcript_duration{
+    padding-bottom: 0.5rem!important;
+}
+
+/*iframe {*/
+/*     width: 100%;*/
+/*    height: 100%;*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/

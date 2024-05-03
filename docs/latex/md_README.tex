@@ -1,0 +1,243 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysection{Description}\label{md_README_autotoc_md1}
+Utilitaire python permettant de lancer des bots qui au moyen d\textquotesingle{}une liste d\textquotesingle{}événements vont exécuter des actions sur Youtube.\hypertarget{md_README_autotoc_md2}{}\doxysection{Prérequis}\label{md_README_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Docker
+\item Python 3
+\item Pip
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md3}{}\doxysection{Installation}\label{md_README_autotoc_md3}
+\$\texorpdfstring{$>$}{>} {\ttfamily cd bot \&\& docker image build -\/t bot .} ~\newline
+ \$\texorpdfstring{$>$}{>} {\ttfamily cd ..} ~\newline
+ \$\texorpdfstring{$>$}{>} {\ttfamily cd cli \&\& pip3 install -\/r requirements.\+txt}\hypertarget{md_README_autotoc_md4}{}\doxysection{Lancement rapide}\label{md_README_autotoc_md4}
+\$\texorpdfstring{$>$}{>} {\ttfamily cd cli} ~\newline
+ \$\texorpdfstring{$>$}{>} {\ttfamily python3 main.\+py}\hypertarget{md_README_autotoc_md5}{}\doxysection{Lancement Paramétré}\label{md_README_autotoc_md5}
+Deux options sont paramétrable pour le moment \+:
+\begin{DoxyItemize}
+\item Le répertoire de sortie des résultats
+\item La liste d\textquotesingle{}événements
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md6}{}\doxysubsection{Arguments}\label{md_README_autotoc_md6}
+\hypertarget{md_README_autotoc_md7}{}\doxysubsubsection{Filename}\label{md_README_autotoc_md7}
+\$\texorpdfstring{$>$}{>} {\ttfamily python3 main.\+py -\/-\/filename \texorpdfstring{$<$}{<}output\+\_\+filename\texorpdfstring{$>$}{>}}\hypertarget{md_README_autotoc_md8}{}\doxysubsubsection{Cookies}\label{md_README_autotoc_md8}
+\$\texorpdfstring{$>$}{>} {\ttfamily python3 main.\+py -\/-\/cookie \texorpdfstring{$<$}{<}cookie\+\_\+filename\texorpdfstring{$>$}{>}}\hypertarget{md_README_autotoc_md9}{}\doxysubsection{Fonction Référence}\label{md_README_autotoc_md9}
+\hypertarget{md_README_autotoc_md10}{}\doxysubsubsection{run\+Job}\label{md_README_autotoc_md10}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily events}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Liste d\textquotesingle{}évènements comme décris plus loin    \\\cline{1-5}
+{\ttfamily user\+\_\+agent}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &user\+Agent    \\\cline{1-5}
+{\ttfamily width}   &int   &\PBS\centering 0-\/8000   &\PBS\centering {\bfseries{True}}   &Largeur de l\textquotesingle{}écran en pixels    \\\cline{1-5}
+{\ttfamily height}   &int   &\PBS\centering 0-\/8000   &\PBS\centering {\bfseries{True}}   &Hauteur de l\textquotesingle{}écran en pixels    \\\cline{1-5}
+{\ttfamily cookies}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Nom du fichier contenant les cookies   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md11}{}\doxysubsubsection{generate\+\_\+user\+\_\+agent\+\_\+and\+\_\+resolution}\label{md_README_autotoc_md11}
+Génère un user agent et une taille d\textquotesingle{}écran aléatoirement.\hypertarget{md_README_autotoc_md12}{}\doxysubsubsection{ save\+\_\+json}\label{md_README_autotoc_md12}
+Sauvegarde les résultat dans un fichier JSON
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily set}   &json   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Résultats obtenues après un run\+Job    \\\cline{1-5}
+{\ttfamily out\+\_\+folder}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Chemin du dossier de résultats    \\\cline{1-5}
+{\ttfamily filename}   &string   &\PBS\centering &\PBS\centering {\bfseries{False}}   &Nom du fichier d\textquotesingle{}enregistrement des résultat si {\ttfamily None} timestamp   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md13}{}\doxysubsubsection{ save\+\_\+csv}\label{md_README_autotoc_md13}
+Sauvegarde les résultat dans un fichier CSV
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily set}   &json   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Résultats obtenues après un run\+Job    \\\cline{1-5}
+{\ttfamily out\+\_\+folder}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Chemin du dossier de résultats    \\\cline{1-5}
+{\ttfamily filename}   &string   &\PBS\centering &\PBS\centering {\bfseries{False}}   &Nom du fichier d\textquotesingle{}enregistrement des résultat si {\ttfamily None} timestamp   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md14}{}\doxysubsubsection{get\+\_\+randoms\+\_\+videos}\label{md_README_autotoc_md14}
+Requête a l\textquotesingle{}api Youtube d\textquotesingle{}un ou plusieurs identifiant aléatoire de vidéo existante
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily nb\+\_\+required}   &int   &\PBS\centering 0-\/100   &\PBS\centering {\bfseries{True}}   &Nombre de vidéo random demandées   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md15}{}\doxysubsubsection{populate\+\_\+ytkids}\label{md_README_autotoc_md15}
+Proxy Youtube Kids résolvant un csv
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily filepath}   &dtring   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Fichier csv à résoudre   \\\cline{1-5}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md16}{}\doxysubsection{Répertoire de sortie}\label{md_README_autotoc_md16}
+
+\begin{DoxyItemize}
+\item Ouvrir le fichier \+: {\ttfamily cli/main.\+py}
+\item Modifier la valeur de la variable {\ttfamily out\+\_\+path}
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md17}{}\doxysubsubsection{Parser le json}\label{md_README_autotoc_md17}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{import json,ast}
+\DoxyCodeLine{}
+\DoxyCodeLine{with open(filename) as f:}
+\DoxyCodeLine{        data = f.read()}
+\DoxyCodeLine{        data\_json = ast.literal\_eval(data)}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md18}{}\doxysubsection{Liste d\textquotesingle{}évènements}\label{md_README_autotoc_md18}
+Pour modifier la liste des évènement \+: Ouvrir le fichier {\ttfamily cli/main.\+py}, puis modifier la variable {\ttfamily events}. \begin{DoxyVerb}events = ['{"type": "fetch", "searchSelection":3}',
+        '{"type": "watchOne", "video_id": "jSZkYrtpZoY", "searchTerm":"Les druides - Prêtres des peuples celtes | ARTE", "watchTime": 60000}',
+        '{"type": "autoplay", "searchSelection": 3, "watchTime": 60000}',
+        '{"type": "fetch", "searchSelection":3}'
+    ]
+\end{DoxyVerb}
+ Quatre évènements sont possible. Il peuvent être combinés et répété.
+
+{\bfseries{Remarque}} \+: L\textquotesingle{}évènement \char`\"{}autoplay\char`\"{} doit toujours être précédé de l\textquotesingle{}évènement \char`\"{}watch\+One\char`\"{}\hypertarget{md_README_autotoc_md19}{}\doxyparagraph{Paramètres des évènements}\label{md_README_autotoc_md19}
+\doxysubparagraph*{fetch}
+
+Cet évènement récupère toute la homepage un nombre de fois paramétré.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily type}   &string   &\PBS\centering fetch   &\PBS\centering {\bfseries{True}}   &Job type    \\\cline{1-5}
+{\ttfamily search\+Selection}   &int   &\PBS\centering 0-\/100   &\PBS\centering {\bfseries{True}}   &Nombre de fetch de homepage   \\\cline{1-5}
+\end{longtabu}
+
+
+\doxysubparagraph*{watch\+One}
+
+Cet évènement regarde une vidéo
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily type}   &string   &\PBS\centering watch\+One   &\PBS\centering {\bfseries{True}}   &Job type    \\\cline{1-5}
+{\ttfamily video\+\_\+id}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Id de la vidéo à regarder    \\\cline{1-5}
+{\ttfamily search\+Term}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Titre de la vidéo à regarder    \\\cline{1-5}
+{\ttfamily watch\+Time}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{True}}   &Temps en millisecondes de visionnage    \\\cline{1-5}
+{\ttfamily alea}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{False}}   &Temps en millisecondes d’aléa sur le visionnage (doit être inférieur à watch\+Time)   \\\cline{1-5}
+\end{longtabu}
+
+
+\doxysubparagraph*{autoplay}
+
+Cet évènement fais une boucle de visionnage sur la première suggestion de vidéo.
+
+{\bfseries{Toujours lancer cet évènement après un \char`\"{}watch\+One\char`\"{}}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily type}   &string   &\PBS\centering autoplay   &\PBS\centering {\bfseries{True}}   &Job type    \\\cline{1-5}
+{\ttfamily search\+Selection}   &int   &\PBS\centering 0-\/100   &\PBS\centering {\bfseries{True}}   &Nombre de vidéo visionnées en autoplay    \\\cline{1-5}
+{\ttfamily watch\+Time}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{True}}   &Temps en millisecondes de visionnage par vidéo    \\\cline{1-5}
+{\ttfamily alea}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{False}}   &Temps en millisecondes d’aléa sur le visionnage (doit être inférieur à watch\+Time)   \\\cline{1-5}
+\end{longtabu}
+
+
+\doxysubparagraph*{fetch\+Autoplay}
+
+Même évenement que autoplay mais fais un fetch de la homepage avant chaque visionnage de vidéo.
+
+{\bfseries{Toujours lancer cet évènement après un \char`\"{}watch\+One\char`\"{}}}
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily type}   &string   &\PBS\centering autoplay   &\PBS\centering {\bfseries{True}}   &Job type    \\\cline{1-5}
+{\ttfamily search\+Selection}   &int   &\PBS\centering 0-\/100   &\PBS\centering {\bfseries{True}}   &Nombre de vidéo visionnées en autoplay    \\\cline{1-5}
+{\ttfamily watch\+Time}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{True}}   &Temps en millisecondes de visionnage par vidéo    \\\cline{1-5}
+{\ttfamily alea}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{False}}   &Temps en millisecondes d’aléa sur le visionnage (doit être inférieur à watch\+Time)   \\\cline{1-5}
+\end{longtabu}
+
+
+\doxysubparagraph*{channel\+Sniffer}
+
+Cet évènement regarde un nombre donné de vidéo aléatoire provenant d\textquotesingle{}une chaîne spécifiée.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Name   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Type   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Value   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Required   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+{\ttfamily type}   &string   &\PBS\centering channel\+Sniffer   &\PBS\centering {\bfseries{True}}   &Job type    \\\cline{1-5}
+{\ttfamily channel\+\_\+id}   &string   &\PBS\centering $\ast$$\ast$($\ast$)$\ast$$\ast$   &\PBS\centering {\bfseries{True}}   &partie de url de la chaîne $\ast$$\ast$($\ast$)$\ast$$\ast$    \\\cline{1-5}
+{\ttfamily search\+Term}   &string   &\PBS\centering &\PBS\centering {\bfseries{True}}   &Nom de la chaîne    \\\cline{1-5}
+{\ttfamily search\+Selection}   &int   &\PBS\centering 0-\/100   &\PBS\centering {\bfseries{True}}   &Nombre de vidéo visionnées alétoirement de la chaîne    \\\cline{1-5}
+{\ttfamily watch\+Time}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{True}}   &Temps en millisecondes de visionnage par vidéo    \\\cline{1-5}
+{\ttfamily get\+All}   &int   &\PBS\centering true-\/false   &\PBS\centering {\bfseries{True}}   &Récupérer toutes les vidéos de la chaîne    \\\cline{1-5}
+{\ttfamily alea}   &int   &\PBS\centering 0-\/100000   &\PBS\centering {\bfseries{False}}   &Temps en millisecondes d’aléa sur le visionnage (doit être inférieur à watch\+Time)   \\\cline{1-5}
+\end{longtabu}
+
+
+$\ast$$\ast$($\ast$) Exemple \+: \href{https://www.youtube.com/user/FRDeath360}{\texttt{ https\+://www.\+youtube.\+com/user/\+FRDeath360}} video\+\_\+id = \char`\"{}/user/\+FRDeath360\char`\"{}$\ast$$\ast$
+
+Pour retourner des infos sur les vidéos du channel, utiliser {\ttfamily get\+All}\+: \begin{quote}
+\textquotesingle{}\{\char`\"{}type\char`\"{}\+: \char`\"{}channel\+Sniffer\char`\"{}, \char`\"{}search\+Selection\char`\"{}\+: 0, \char`\"{}channel\+\_\+id\char`\"{}\+: \char`\"{}/user/\+HG13710\char`\"{}, \char`\"{}search\+Term\char`\"{}\+:\char`\"{}\+Gerard Heiries\char`\"{}, \char`\"{}get\+All\char`\"{}\+: true\}\textquotesingle{}, \end{quote}

@@ -1,0 +1,18 @@
+{
+  "experiment": "election-welcome-fetch",
+  "naming": "proximity",
+  "save_html": true,
+  "transcript_language": [
+    "fr"
+  ],
+  "lang": "fr",
+  "nb_runs": 1000,
+  "nb_walks": 5,
+  "watch_time": 50000,
+  "store_folder": null,
+  "channels": "meta_channels.json",
+  "resolve_regex": "*20*.csv",
+  "random_start": true,
+  "waiting_seconds": 600,
+  "channel_sniffing_reload_hour": 720
+}

@@ -1,0 +1,7 @@
+pandas
+google-api-python-client
+requests
+pandarallel
+youtube_transcript_api
+tqdm
+joblib

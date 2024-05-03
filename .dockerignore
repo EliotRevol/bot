@@ -1,0 +1,18 @@
+# Files to ignore on docker context during built. Be aware these folders will be mounted as volume during docker run.
+# should be moved on root directory - migration after gui
+cli/output/
+# we probably never need git files inside container
+.git
+#data which will be mounted later
+gui_data/*
+gui_half_life_data/*
+#kids
+output-walks/*
+output-kids/*
+certs/
+cli/output/*
+output*
+
+
+
+

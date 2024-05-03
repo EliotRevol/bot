@@ -1,0 +1,38 @@
+[
+  {
+    "channel": "youtube gaming",
+    "id": "youtube gaming",
+    "meta-name": "gaming",
+    "meta-type": "meta"
+  },
+  {
+    "channel": "UCrpQ4p1Ql_hG8rKXIKM1MOQ",
+    "id": "UCrpQ4p1Ql_hG8rKXIKM1MOQ",
+    "meta-name": "fashion",
+    "meta-type": "meta"
+  },
+  {
+    "channel": "UCEgdi0XIXXZ-qJOFPf4JSKw",
+    "id": "UCEgdi0XIXXZ-qJOFPf4JSKw",
+    "meta-name": "sports",
+    "meta-type": "meta"
+  },
+  {
+    "channel": "UCtFRv9O2AHqOZjjynzrv-xg",
+    "id": "learning",
+    "meta-name": "learning",
+    "meta-type": "meta"
+  },
+  {
+    "channel": "UCYfdidRxbB8Qhf0Nx7ioOYw",
+    "id": "UCYfdidRxbB8Qhf0Nx7ioOYw",
+    "meta-name": "news",
+    "meta-type": "custom"
+  },
+  {
+    "channel": "UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+    "id": "UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+    "meta-name": "music",
+    "meta-type": "meta"
+  }
+]
