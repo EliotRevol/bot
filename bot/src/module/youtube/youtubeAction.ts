@@ -19,10 +19,11 @@ export class YoutubeAction extends Action {
         try {
             await this.page.goto(Common.__URL__, {waitUntil: 'networkidle2', timeout: 0});
         } catch (error) {
-            console.log("ERROR HERE CONNEXION");
+            console.log("ERROR CONNEXION FAILED");
+            console.log(error);
             process.exit()
         }
-        //console.log("Here we go !");
+
         await this.preCondition()
         await this.noSign()
     }
@@ -30,15 +31,26 @@ export class YoutubeAction extends Action {
     async preCondition() {
         let agree = null
         //console.log("agree = null");
+
         try {
-            //console.log("trying to get agree button");
-            await this.page.waitForTimeout(3000);
-            await this.page.waitFor(Common.__AGREEBUTTON__);
-            //console.log("waiting for it");
+            await this.page.waitForSelector(Common.__AGREEBUTTON__);
+        }
+        catch(error) {
+            try {
+            await this.page.goto(Common.__URL__, {waitUntil: 'networkidle2', timeout: 0});
+            } 
+            catch (error) {
+                console.log("ERROR CONNEXION FAILED (second)");
+                console.log(error);
+                process.exit()
+            }
+        }
+
+        try {
+            await this.page.waitForSelector(Common.__AGREEBUTTON__);
             agree = await this.scrapper.getElement(this.page, Common.__AGREEBUTTON__)
-            //console.log("Got it !");
         } catch (error) {
-            console.log("FAILED ACCEPT COOKIES!!");
+            console.log("Page could not be loaded.");
             let path = Date.now() + '_error.png';
             await this.page.screenshot({path: path, fullPage: true});
             try {
