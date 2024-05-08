@@ -86,7 +86,7 @@ class ChannelPersonalizationAdapter(Experiment, ABC):
 
     def run_personalized_channel_walk(self, filename, starts):
         events = [
-            '{"type": "fetch", "searchSelection":3}',
+            '{"type": "fetch", "searchSelection":1}',
         ]
 
         for s in starts:

@@ -1,5 +1,5 @@
 {
-  "experiment": "election-welcome-fetch",
+  "experiment": "election-channel-personalization",
   "naming": "proximity",
   "save_html": true,
   "transcript_language": [
@@ -13,6 +13,6 @@
   "channels": "candidates_channels.json",
   "resolve_regex": "*20*.csv",
   "random_start": true,
-  "waiting_seconds": 600,
+  "waiting_seconds": 5,
   "channel_sniffing_reload_hour": 720
 }

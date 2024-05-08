@@ -19,9 +19,13 @@ export class YoutubeAction extends Action {
         try {
             await this.page.goto(Common.__URL__, {waitUntil: 'networkidle2', timeout: 0});
         } catch (error) {
-            console.log("ERROR CONNEXION FAILED");
-            console.log(error);
-            process.exit()
+            try {
+                await this.page.goto(Common.__URL__, {waitUntil: 'networkidle2', timeout: 0});
+            } catch (error) {
+                console.log("STRONG ERROR CONNEXION FAILED");
+                console.log(error);
+                process.exit()
+            }
         }
 
         await this.preCondition()
@@ -196,20 +200,28 @@ export class YoutubeAction extends Action {
     async clickOnChannelFilter() {
         // await this.isFullyLoad()
         try {
+            let path = Date.now() + '_error.png';
+            await this.page.screenshot({path: path, fullPage: true});
             await this.page.waitFor(3000);
             await this.page.waitFor(SearchPage.__CHANNELFILTER__);
         } catch (e) {
             // if stuck on search button click, rerun the sequence
+            console.log("stuck on search");
+            await this.page.waitFor(3000);
             await this.enterSearchInput();
             await this.page.waitFor(3000);
             await this.page.waitFor(SearchPage.__CHANNELFILTER__);
         }
+        
         const filter = await this.scrapper.getElement(this.page, SearchPage.__CHANNELFILTER__)
         if (filter !== null) {
             await this.lauchCmd(filter, 'click', '')
             await this.page.waitFor(SearchPage.__CHANNELFILTERBUTTON__);
             const channel_filter = await this.scrapper.getElement(this.page, SearchPage.__CHANNELFILTERBUTTON__)
             await this.lauchCmd(channel_filter, 'click', '')
+        }
+        else {
+            console.log("big big error");
         }
     }
 
@@ -265,20 +277,28 @@ export class YoutubeAction extends Action {
         try {
             await this.page.waitFor(Common.__SEARCHINPUT__);
         } catch (error) {
+            console.log("error on  catching search input in channelSniffer");
             return null;
         }
         await this.page.waitFor(3000)
+        //console.log("could wait for 3000");
         await this.enterSearchInput()
         await this.page.waitFor(3000)
+        console.log("could wait for 3000");
         await this.clickOnChannelFilter()
         await this.scrollUntilChannelId()
 
+
+        let path = Date.now() + '_error.png';
+        await this.page.screenshot({path: path, fullPage: true});
         const videos = await this.scrapper.getChannelFilter(this.page);
         let searchSelection = 0;
         if (typeof this.channel_id !== 'undefined') {
+            console.log("defined");
             for (let i = 0; i < videos.length; i++) {
                 const url = await this.scrapper.getHomeUrls(videos[i])
                 if (url.includes(this.channel_id)) {
+                    console.log("found channel !");
                     searchSelection = i;
                     break;
                 }
@@ -315,7 +335,8 @@ export class YoutubeAction extends Action {
         await this.page.waitFor(channelNameSelector);
         const channel_name_element = await this.scrapper.getElement(this.page, channelNameSelector)
         const channel_name = await this.page.evaluate((el: any) => el.innerText, channel_name_element);
-
+        //path = Date.now() + '_error.png';
+        //await this.page.screenshot({path: path, fullPage: true});
 
         const videos_channel = await this.scrapper.getHomeProposals(this.page);
         for (let i = 0; i < videos_channel.length; i++) {
@@ -348,6 +369,8 @@ export class YoutubeAction extends Action {
         await this.enterSearchInput();
         await this.page.waitFor(Homepage.__PROPOSALS__);
         await this.scrollUntilId()
+        let path = Date.now() + '_thing.png';
+        await this.page.screenshot({path: path, fullPage: true});
         const videos = await this.scrapper.getHomeProposals(this.page);
         let searchSelection = null;
         if (typeof this.video_id !== 'undefined') {
@@ -389,6 +412,7 @@ export class YoutubeAction extends Action {
                 await this.page.click(Common.__SEARCHBUTTON__);
                 let next_url = await this.page.url();
                 if (next_url === current_url) {
+                    console.log("could not load the expected new page");
                     //better than fetching wrong data from homepage instead of search results
                     process.exit(); // close the app
                 }
@@ -418,9 +442,10 @@ export class YoutubeAction extends Action {
 
         const max_selection = await this.scrollToEnd();
         const proposals = await this.scrapper.getHomeProposals(this.page);
-        let path = Date.now() + '_error.png';
-        await this.page.screenshot({path: path, fullPage: true});
+        //let path = Date.now() + '_error.png';
+        //await this.page.screenshot({path: path, fullPage: true});
         //console.log("je test un truc");
+        //console.log(proposals);
         for (let i = 0; i < max_selection; i++) {
             //console.log("je test un truc 100");
             const video = new Video(await this.scrapper.getHomeUrls(proposals[i]), this.videoViewsNB);
@@ -459,8 +484,13 @@ export class YoutubeAction extends Action {
     async fillAutoplaysearch() {
         try {
             this.searchTerm = await this.page.$eval(VideoPage.__AUTOPLAY__TITLE, (el: any) => el.textContent.trim())
-            this.video_id = await this.page.$eval(VideoPage.__AUTOPLAY__URL, (el: any) => el.href.substring(el.href.lastIndexOf('=') + 1, el.href.length))
+            this.video_id = await this.page.$eval(VideoPage.__AUTOPLAY__URL, (el: any) => el.href.substring(el.href.lastIndexOf('v=') + 2, el.href.length))
+            //console.log(VideoPage.__AUTOPLAY__TITLE);
+            //console.log(this.video_id);
+            //console.log(this.searchTerm);
         } catch (error) {
+            let path = Date.now() + '_error.png';
+            await this.page.screenshot({path: path, fullPage: true});
             process.exit()
         }
     }

@@ -74,8 +74,8 @@ def exportSet(set, filename, store_folder=None):
     if not df.empty:
         csv_path = config.get_output_base_name(filename, store_folder) + '.csv'
         df.to_csv(csv_path, index=None,
-                  columns=["url", "homePosition", "ytkids", "type", "insertionDate", "refreshNB", "regionAllowed",
-                           "author", "watchTime", "actionNB", "videoViewsNB", "parent_id"])
+                  columns=["url", "title", "author", "type", "insertionDate", "refreshNB",
+                            "watchTime", "actionNB", "videoViewsNB", "parent_id"])
         return csv_path
     else:
         return None

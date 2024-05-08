@@ -9,8 +9,17 @@ from core.src.bot import runJob
 from core.src.export import save_json, save_csv
 from core.src.user_agent_generator import generate_user_agent_and_resolution
 
-events = ['{"type": "watchOne", "video_id": "bEbwmJy3xW8", "searchTerm":"Je vais à la mosquée pour la première fois", "watchTime": 6000}',
-          '{"type": "fetchAutoplay", "searchSelection": 5, "watchTime": 6000}',
+events = ['{"type": "watchOne", "video_id": "HR_UZhz9dwQ", "searchTerm":"Européennes: Bardella a-t-il tué le match ?", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "oQpryKlWYjY", "searchTerm":"Débat G. Attal / J. Bardella - Replay du 20H de TF1", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "OY2WvPg35-Y", "searchTerm":"Européennes: le premier débat entre Jordan Bardella et Valérie Hayer en intégralité", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "TmIVC9AGTuo", "searchTerm":"Jordan Bardella : L Europe doit mettre fin à une forme de naïveté à l égard de la mondialisation", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "OrPBJyDvp2w", "searchTerm":"L union fait la France !", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "VjILoreoNco", "searchTerm":"Jordan Bardella IMPLACABLE sur l insécurité ! | Apolline Matin", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "qJ_J4UcECiw", "searchTerm":"🔴 EN DIRECT - Jordan Bardella face aux Grandes Gueules !", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "70_vcb0EQtk", "searchTerm":"🔴 DIRECT - L intégrale de l interview de Jordan Bardella, président du RN, sur RMC", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "oOdXYFGohf0", "searchTerm":"Jordan Bardella répond à Eric Dupond-Moretti sur le tacle à Marine Le Pen !", "watchTime": 6000}',
+          '{"type": "watchOne", "video_id": "mw4L2xmEtS8", "searchTerm":"Jordan Bardella face à Pascal Praud : Drame de Crépol, traitement médiatique, vie privée...", "watchTime": 6000}',
+          '{"type": "fetchAutoplay", "searchSelection": 150, "watchTime": 6000}',
           ]
 
 out_path = './output/'

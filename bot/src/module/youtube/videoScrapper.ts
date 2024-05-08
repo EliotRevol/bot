@@ -44,7 +44,7 @@ export class VideoScrapper extends Scrapper {
             try {
                 return await elementHandle.$eval("span:nth-child(1)", (a: any) => a.textContent);
             } catch (e) {
-                return "bigtest"
+                return "bigtest";
             }
         }
     }
