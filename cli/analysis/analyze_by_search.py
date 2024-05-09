@@ -9,12 +9,12 @@ data = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv")  # Assurez-vous 
 ###################### Analyse par recherche ###########################
 
 list_ed = ["le pen", "bardella","marechal","marion","rn"]
-list_eg = ["melenchon"]
-list_c = ["macron","hayer"]
+list_eg = ["melenchon","nupes"]
+list_c = ["macron","hayer","attal"]
 list_g = ["glucksmann","valls"]
-list_d = []
-list_p = ["debat","election","poutine","attentat"]
-list_eu = ["europe","europeen","europeenne","bardella","glucksmann","hayer"]
+list_d = ["bellamy","francois-xavier"]
+list_p = ["debat","election","poutine","attentat","palestine","palestiniens","president","gaza","lrem","nupes","sciences po","politique"]
+list_eu = ["europe","europeen","europeenne","bardella","glucksmann","hayer","l ue","aubry","l'ue","manon","francois-xavier","bellamy"]
 
 data_ED=[]
 data_EG=[]
@@ -27,19 +27,21 @@ data_EU=[]
 
 for i in range(0,len(data["title"])) :
     title = data["title"][i]
+    author = data["author"][i]
     title = unidecode(str.lower(title))
+    author = unidecode(str.lower(author))
     ED,EG,G,D,C,O,P,EU = 0,0,0,0,0,0,0,0
-    if any(substring in title for substring in list_ed):
+    if any(substring in title or substring in author for substring in list_ed):
         ED = 1
-    if any(substring in title for substring in list_eg):
+    if any(substring in title or substring in author for substring in list_eg):
         EG = 1
-    if any(substring in title for substring in list_c):
+    if any(substring in title or substring in author for substring in list_c):
         C = 1
-    if any(substring in title for substring in list_g):
+    if any(substring in title or substring in author for substring in list_g):
         G = 1
-    if any(substring in title for substring in list_d):
+    if any(substring in title or substring in author for substring in list_d):
         D = 1
-    if any(substring in title for substring in list_eu):
+    if any(substring in title or substring in author for substring in list_eu):
         EU = 1
     if ((ED or EG or C or G or D) or any(substring in title for substring in list_p)):
         P = 1

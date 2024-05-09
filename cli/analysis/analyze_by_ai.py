@@ -10,6 +10,7 @@ from sklearn.preprocessing import LabelEncoder
 # Charger les données
 data = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
+####################### Analyse par bot ################################
 # Diviser les données en ensembles d'entraînement et de test 1752 1567
 X_train, X_test, y_train, y_test = train_test_split(pd.concat([data["title"][:294],data["title"][776:874],data["title"][889:933],data["title"][1567:1751]]),pd.concat([data["parti"][:294],data["parti"][776:874],data["parti"][889:933],data["parti"][1567:1751]]), test_size=0.2, random_state=42)
 
