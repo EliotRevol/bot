@@ -44,7 +44,7 @@ events = ['{"type": "watchOne", "video_id": "HR_UZhz9dwQ", "searchTerm":"Europé
       	'{"type": "watchOne", "video_id": "l4sgGLnIcwo", "searchTerm":"Européennes: suivez le grand débat entre Jordan Bardella et Manuel Valls ", "watchTime": 6000}',
       	'{"type": "watchOne", "video_id": "BR8p26A7zCU", "searchTerm":"Jordan Bardella mets en PLS Emilie Tran Nguyen dans C à vous. ", "watchTime": 6000}',
       	'{"type": "watchOne", "video_id": "7Em_GYcPsLI", "searchTerm":" La France d abord, l Europe ensuite : Jordan Bardella invité du 20H ", "watchTime": 6000}',
-          '{"type": "fetchAutoplay", "searchSelection": 800, "watchTime": 6000}',
+          '{"type": "fetchAutoplay", "searchSelection": 85, "watchTime": 6000}',
          ]
 
 

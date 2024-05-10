@@ -8,13 +8,13 @@ data = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv")  # Assurez-vous 
 
 ###################### Analyse par recherche ###########################
 
-list_ed = ["le pen", "bardella","marechal","marion","rn"]
-list_eg = ["melenchon","nupes"]
-list_c = ["macron","hayer","attal"]
-list_g = ["glucksmann","valls"]
-list_d = ["bellamy","francois-xavier"]
-list_p = ["debat","election","poutine","attentat","palestine","palestiniens","president","gaza","lrem","nupes","sciences po","politique"]
-list_eu = ["europe","europeen","europeenne","bardella","glucksmann","hayer","l ue","aubry","l'ue","manon","francois-xavier","bellamy"]
+list_ed = ["le pen", "bardella","marechal","marion"," rn","zemmour","chenu","reconquete","philippot","nicolas bay","gollnish","briois","aliot","collard","menard","front national","fn","rassemblement national","patriote","reconquete"]
+list_eg = ["melenchon","nupes","aubry","bompard","panot","autain","lfi","insoumis","communisme","boyard"]
+list_c = ["macron","hayer","attal","moretti","lrem","edouard philippe","en marche",]
+list_g = ["glucksmann","valls","la gauche","de gauche"]
+list_d = ["bellamy","francois-xavier","pecresse","la droite","de droite","balkany","republicain","larcher"]
+list_p = ["debat","election","poutine","attentat","palestine","palestiniens","president","gaza","lrem","nupes","sciences po","politique","rousseau","messhia","russe","russes","ukraine","trump","democratie","parlement"]
+list_eu = ["europe","europeen","europeennes","bardella","glucksmann","hayer","l ue","aubry","l'ue","manon","francois-xavier","bellamy"]
 
 data_ED=[]
 data_EG=[]
@@ -43,7 +43,7 @@ for i in range(0,len(data["title"])) :
         D = 1
     if any(substring in title or substring in author for substring in list_eu):
         EU = 1
-    if ((ED or EG or C or G or D) or any(substring in title for substring in list_p)):
+    if ((ED or EG or C or G or D or EU) or any(substring in title for substring in list_p)):
         P = 1
     else:
         O = 1
@@ -62,9 +62,9 @@ data["EG"] = data_EG
 data["G"] = data_G
 data["D"] = data_D
 data["C"] = data_C
-data["O"] = data_O
 data["P"] = data_P
 data["EU"] = data_EU
+data["O"] = data_O
 
 # Enregistrer le DataFrame mis à jour dans le même fichier CSV
 data.to_csv("new_file.csv", index=False)
