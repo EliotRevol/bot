@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 
 
 # Charger les données
-data = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
+data = pd.read_csv("./base_ai.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
 ####################### Analyse par bot ################################
 # Diviser les données en ensembles d'entraînement et de test 1752 1567
@@ -46,4 +46,4 @@ predictions_original = label_encoder.inverse_transform(predictions)
 data["pred_parti"] = predictions_original
 
 # Enregistrer le DataFrame mis à jour dans le même fichier CSV
-data.to_csv("new_file.csv", index=False)
+data.to_csv("./analyzed/ai_file.csv", index=False)

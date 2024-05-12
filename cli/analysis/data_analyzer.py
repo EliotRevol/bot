@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./new_file.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
+data = pd.read_csv("./analyzed/search_file.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
 ###################### Analyse par recherche ###########################
 
@@ -128,9 +128,8 @@ for i in range(0,8):
     ar2 = np.append(ar2,total[i])
     new_data_total[category] = np.append(np.add(ar,ar2),nb_regular[i])
 
-# Enregistrer le DataFrame mis à jour dans le même fichier CSV
-new_data_regular.to_csv("analysis_regular.csv", index=False)
-new_data_homepage.to_csv("analysis_hompage.csv", index=False)
-new_data_total.to_csv("analysis_total.csv", index=False)
-new_data_total_percent.to_csv("analysis_total_percent.csv", index=False)
-new_data_regular_percent.to_csv("analysis_regular_percent.csv", index=False)
+new_data_regular.to_csv("./analyzed/analysis_regular.csv", index=False)
+new_data_homepage.to_csv("./analyzed/analysis_hompage.csv", index=False)
+new_data_total.to_csv("./analyzed/analysis_total.csv", index=False)
+new_data_total_percent.to_csv("./analyzed/analysis_total_percent.csv", index=False)
+new_data_regular_percent.to_csv("./analyzed/analysis_regular_percent.csv", index=False)

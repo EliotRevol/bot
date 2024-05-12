@@ -9,7 +9,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # Charger les données
 data = pd.read_csv("./base_ai.csv") 
-data_total = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv") 
+data_total = pd.read_csv("./to_analyze/EQ_40.csv") 
 
 
 ####################### Analyse par bot ################################
@@ -32,4 +32,4 @@ for i in range(0,8):
     data_total[categories[i]] = predictions
 
 
-data_total.to_csv("new_file.csv", index=False)
+data_total.to_csv("./analyzed/search_file.csv", index=False)

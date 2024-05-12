@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv")
+data = pd.read_csv("./to_analyze/ED_35.csv")
 data_out = pd.DataFrame()
 
 d_out = []
@@ -47,4 +47,4 @@ nd_out.append("Total videos : ")
 
 data_out["title"] = nd_out
 data_out["number"] = nd_out_val
-data_out.to_csv("repetition.csv", index=False)
+data_out.to_csv("./analyzed/repetition.csv", index=False)

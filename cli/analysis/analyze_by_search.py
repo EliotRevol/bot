@@ -4,16 +4,16 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./ED_Autoplay85_Nbvid35_Watchtime3min.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
+data = pd.read_csv("./to_analyze/G_35_2.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
 ###################### Analyse par recherche ###########################
 
-list_ed = ["le pen", "bardella","marechal","marion"," rn","zemmour","chenu","reconquete","philippot","nicolas bay","gollnish","briois","aliot","collard","menard","front national","fn","rassemblement national","patriote","reconquete"]
-list_eg = ["melenchon","nupes","aubry","bompard","panot","autain","lfi","insoumis","communisme","boyard"]
-list_c = ["macron","hayer","attal","moretti","lrem","edouard philippe","en marche",]
-list_g = ["glucksmann","valls","la gauche","de gauche"]
-list_d = ["bellamy","francois-xavier","pecresse","la droite","de droite","balkany","republicain","larcher"]
-list_p = ["debat","election","poutine","attentat","palestine","palestiniens","president","gaza","lrem","nupes","sciences po","politique","rousseau","messhia","russe","russes","ukraine","trump","democratie","parlement"]
+list_ed = ["biard","rigault","virginie joron","philippe bilger","sebastien chenu","extreme droite","asselineau","le pen", "bardella","marechal","marion"," rn","zemmour","chenu","reconquete","philippot","nicolas bay","gollnish","briois","aliot","collard","menard","front national","fn","rassemblement national","patriote","reconquete","trump"]
+list_eg = ["clemence guette","extreme gauche","guetté","melenchon","nupes","aubry","bompard","panot","autain","lfi","insoumis","communisme","boyard"]
+list_c = ["clinton","biden","veran","macron","hayer","attal","moretti","lrem","edouard philippe","en marche",]
+list_g = ["front populaire","alexis corbières","claire nouvian","francois ruffin","plenel","socialiste"," ps,"," ps ","sophia aram""le drian","glucksmann","valls","la gauche","de gauche","hollande","mitterrand"]
+list_d = ["républicain"," lr ","carayon","bruno le maire","alain carignon","bellamy","francois-xavier","pecresse","la droite","de droite","balkany","republicain","larcher"]
+list_p = ["la loi ","israel","ouighour","politique","diplomatie","censure","etat","fusillade","palestin","populisme","gilets jaunes","jinping","russie","diplomatie","fusillades","nazi","debat","election","poutine","attentat","palestine","palestiniens","president","gaza","lrem","nupes","sciences po","politique","rousseau","messhia","russe","russes","ukraine","trump","democratie","parlement"]
 list_eu = ["europe","europeen","europeennes","bardella","glucksmann","hayer","l ue","aubry","l'ue","manon","francois-xavier","bellamy"]
 
 data_ED=[]
@@ -67,4 +67,4 @@ data["EU"] = data_EU
 data["O"] = data_O
 
 # Enregistrer le DataFrame mis à jour dans le même fichier CSV
-data.to_csv("new_file.csv", index=False)
+data.to_csv("./analyzed/search_file.csv", index=False)
