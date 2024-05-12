@@ -485,10 +485,17 @@ export class YoutubeAction extends Action {
         try {
             this.searchTerm = await this.page.$eval(VideoPage.__AUTOPLAY__TITLE, (el: any) => el.textContent.trim())
             this.video_id = await this.page.$eval(VideoPage.__AUTOPLAY__URL, (el: any) => el.href.substring(el.href.lastIndexOf('v=') + 2, el.href.length))
-            //console.log(VideoPage.__AUTOPLAY__TITLE);
-            //console.log(this.video_id);
-            //console.log(this.searchTerm);
+            let i = 0;
+            while(this.video_id.includes("/shorts/")) {
+                const proposals = await this.scrapper.getProposals(this.page)
+                const video = new Video(await this.scrapper.getHomeUrls(proposals[i]), this.videoViewsNB);
+                this.searchTerm = (await this.scrapper.getHomeTitles(proposals[i])).trim()//await this.page.$eval(VideoPage.__AUTOPLAY__TITLE, (el: any) => el.textContent.trim())
+                this.video_id = video.getUrl();
+            }
         } catch (error) {
+            this.video_id = await this.page.$eval(VideoPage.__AUTOPLAY__URL)
+            if(this.video_id)
+            console.log("common error")
             let path = Date.now() + '_error.png';
             await this.page.screenshot({path: path, fullPage: true});
             process.exit()

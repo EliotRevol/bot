@@ -36,6 +36,7 @@ export class VideoPage {
     static __AUTOPLAY__: string = "#dismissible > div.details";
     static __AUTOPLAY__TITLE: string = "#video-title.style-scope.ytd-compact-video-renderer";
     static __AUTOPLAY__URL: string = "#dismissible > div > div.metadata.style-scope.ytd-compact-video-renderer > a";
+    static __AUTOPLAY__URL2: string = "ytd-compact-video-renderer.style-scope:nth-child(2)"
     static __PROPOSALS__: string = "ytd-compact-video-renderer.style-scope"
 }
 
