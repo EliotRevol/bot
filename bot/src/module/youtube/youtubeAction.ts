@@ -142,8 +142,6 @@ export class YoutubeAction extends Action {
         while (winHeight > previousWinHeight) {
             await this.page.evaluate('window.scrollTo(' + start + ', ' + end + ')')
             videos = await this.scrapper.getHomeProposals(this.page);
-            let path = Date.now() + '_error.png';
-            await this.page.screenshot({path: path, fullPage: true});
             //console.log("okokokok");
             //console.log(videos.length - 1);
             await this.page.waitFor(1000)
@@ -200,8 +198,6 @@ export class YoutubeAction extends Action {
     async clickOnChannelFilter() {
         // await this.isFullyLoad()
         try {
-            let path = Date.now() + '_error.png';
-            await this.page.screenshot({path: path, fullPage: true});
             await this.page.waitFor(3000);
             await this.page.waitFor(SearchPage.__CHANNELFILTER__);
         } catch (e) {
@@ -289,8 +285,6 @@ export class YoutubeAction extends Action {
         await this.scrollUntilChannelId()
 
 
-        let path = Date.now() + '_error.png';
-        await this.page.screenshot({path: path, fullPage: true});
         const videos = await this.scrapper.getChannelFilter(this.page);
         let searchSelection = 0;
         if (typeof this.channel_id !== 'undefined') {
@@ -369,8 +363,6 @@ export class YoutubeAction extends Action {
         await this.enterSearchInput();
         await this.page.waitFor(Homepage.__PROPOSALS__);
         await this.scrollUntilId()
-        let path = Date.now() + '_thing.png';
-        await this.page.screenshot({path: path, fullPage: true});
         const videos = await this.scrapper.getHomeProposals(this.page);
         let searchSelection = null;
         if (typeof this.video_id !== 'undefined') {

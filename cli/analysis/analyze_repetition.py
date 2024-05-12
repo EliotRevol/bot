@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./to_analyze/ED_35.csv")
+data = pd.read_csv("./to_analyze/D_20.csv")
 data_out = pd.DataFrame()
 
 d_out = []

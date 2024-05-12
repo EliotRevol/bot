@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./to_analyze/G_35_2.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
+data = pd.read_csv("./to_analyze/D_20.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
 ###################### Analyse par recherche ###########################
 

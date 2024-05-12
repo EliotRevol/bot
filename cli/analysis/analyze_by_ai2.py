@@ -16,9 +16,9 @@ data_total = pd.read_csv("./to_analyze/EQ_40.csv")
 
 categories = ["ED","EG","G","D","C","O","P","EU"]
 for i in range(0,8):
-    X_train = data["name"]
+    X_train = data["name"]+data["author"]
     y_train = data[categories[i]]
-    X_total = data_total["title"]
+    X_total = data_total["title"]+data_total["author"]
 
     tfidf_vectorizer = TfidfVectorizer(max_features=10000)
     X_train_tfidf = tfidf_vectorizer.fit_transform(X_train)

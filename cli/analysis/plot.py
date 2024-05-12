@@ -17,7 +17,7 @@ dl = len(data["X"])
 while (dl + to_remove)%14 != 0:
     to_remove -= 1
 X = np.array(data["X"][:to_remove])
-xs = np.linspace(0,100,2000)
+xs = np.linspace(0,98,2000)
 tab_plot=[]
 
 for i in range(0,len(categories)):
@@ -31,10 +31,10 @@ for i in range(0,len(categories)):
     tab_plot.append(plt.plot(xs,ys,colours[i],label=label[i]))
 
 plt.ylim(0,1)
-plt.axvline(x=35,color="#fcdf00",label="Beginning of autoplay")
+plt.axvline(x=40,color="#fcdf00",label="Beginning of autoplay")
 plt.xlabel("Number of videos watched",fontsize=18)
 plt.ylabel("Percentage of video recommended",fontsize=18)
-plt.title("Recommended videos when training bot with 35 left videos",fontsize=22)
+plt.title("Recommended videos when training bot with 10 videos from each candidate",fontsize=22)
 plt.rcParams.update({'font.size': 15})
 plt.legend()
 
