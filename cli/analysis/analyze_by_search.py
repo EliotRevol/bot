@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./to_analyze/ED_35_8min.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
+data = pd.read_csv("./to_analyze/ED_10_6s_2.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
 ###################### Analyse par recherche ###########################
 
@@ -63,9 +63,9 @@ data["EG"] = data_EG
 data["G"] = data_G
 data["D"] = data_D
 data["C"] = data_C
+data["O"] = data_O
 data["P"] = data_P
 data["EU"] = data_EU
-data["O"] = data_O
 
 # Enregistrer le DataFrame mis à jour dans le même fichier CSV
 data.to_csv("./analyzed/search_file.csv", index=False)

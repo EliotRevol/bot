@@ -17,7 +17,7 @@ dl = len(data["X"])
 while (dl + to_remove)%14 != 0:
     to_remove -= 1
 X = np.array(data["X"][:to_remove])
-xs = np.linspace(0,140,2000)
+xs = np.linspace(0,100,2000)
 tab_plot=[]
 
 for i in range(0,len(categories)):

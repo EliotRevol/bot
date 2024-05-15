@@ -13,14 +13,14 @@ short_nb = 0
 nb_vid = 0
 
 for i in range(0, len(data["title"])):
-    #print(i)
+    print(i)
     nb_vid+=1
     value = data["title"][i].strip()
     value = value.replace(" ","")
     value = value.replace("’","")
     value = value.replace("\"","")
     short = "shorts" in data["url"][i]
-    if data["videoViewsNB"][i] == 119: #TO REMOVE
+    if data["videoViewsNB"][i] == 121: #TO REMOVE
         break
     if short :
         short_nb+=1

@@ -32,7 +32,10 @@ total = [0,0,0,0,0,0,0,0]
 for i in range(0,len(data["title"])) :
     type = data["type"][i]
     list_nbvid[it] +=1
+    print(i)
     if("regular" == type and i != 0):
+        if it == 119 :
+            break
         list_nbvid.append(0)
         list_nbproposal.append(0)
         list_proposal.append(nb_proposal)
@@ -58,7 +61,7 @@ for i in range(0,len(data["title"])) :
         for j in range(0,8) :
             category = categories[j]
             nb_homepage[j] += data[category][i]
-    else :
+    elif (type == "proposal"):
         list_nbproposal[it]+=1
         for j in range(0,8) :
             category = categories[j]
@@ -69,6 +72,8 @@ list_homepage.append(nb_homepage)
 total_homepage = np.add(nb_homepage,total_homepage)
 total = np.add(nb_proposal,total)
 it+=1
+
+print(nb_regular)
 
 new_data_regular = pd.DataFrame()
 new_data_homepage = pd.DataFrame()
