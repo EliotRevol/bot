@@ -202,7 +202,7 @@ export class YoutubeAction extends Action {
             await this.page.waitFor(SearchPage.__CHANNELFILTER__);
         } catch (e) {
             // if stuck on search button click, rerun the sequence
-            console.log("stuck on search");
+            //console.log("stuck on search");
             await this.page.waitFor(3000);
             await this.enterSearchInput();
             await this.page.waitFor(3000);

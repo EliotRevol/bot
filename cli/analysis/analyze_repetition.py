@@ -4,17 +4,26 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./to_analyze/D_20.csv")
+data = pd.read_csv("./analyzed/reduce.csv")
 data_out = pd.DataFrame()
 
 d_out = []
 d_out_val = []
+short_nb = 0
+nb_vid = 0
 
 for i in range(0, len(data["title"])):
+    #print(i)
+    nb_vid+=1
     value = data["title"][i].strip()
     value = value.replace(" ","")
     value = value.replace("’","")
     value = value.replace("\"","")
+    short = "shorts" in data["url"][i]
+    if data["videoViewsNB"][i] == 119: #TO REMOVE
+        break
+    if short :
+        short_nb+=1
     made = 0
 
     for j in range(0,len(d_out)):
@@ -40,10 +49,12 @@ for i in range(0,len(d_out)):
 
 nd_out_val.append(total_calc)
 nd_out_val.append(len(arg_sort))
-nd_out_val.append(len(data["title"]))
+nd_out_val.append(nb_vid)
+nd_out_val.append(short_nb)
 nd_out.append("Total number or repetition : ")
 nd_out.append("Unique videos : ")
 nd_out.append("Total videos : ")
+nd_out.append("Total number of shorts : ")
 
 data_out["title"] = nd_out
 data_out["number"] = nd_out_val

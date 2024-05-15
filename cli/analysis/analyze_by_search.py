@@ -4,7 +4,7 @@ from unidecode import unidecode
 
 
 # Charger les données
-data = pd.read_csv("./to_analyze/D_20.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
+data = pd.read_csv("./to_analyze/ED_35_8min.csv")  # Assurez-vous que votre fichier CSV contient deux colonnes : "texte" et "parti_politique"
 
 ###################### Analyse par recherche ###########################
 
@@ -26,6 +26,7 @@ data_P=[]
 data_EU=[]
 
 for i in range(0,len(data["title"])) :
+    print(i)
     title = data["title"][i]
     author = data["author"][i]
     title = unidecode(str.lower(title))
